@@ -1,0 +1,586 @@
+[
+  {
+    "author": "Антонов Юрий",
+    "song": "Летящей Походкой",
+    "length": "4.41",
+    "src": "/example_tracks/Antonov.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Агата Кристи",
+    "song": "Как На Войне",
+    "length": "4.05",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Ария",
+    "song": "Потеряный Рай",
+    "length": "5.26",
+    "src": "/example_tracks/poteryanyi_rai.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Artik & Asti",
+    "song": "Девочка Танцуй",
+    "length": "4.20",
+    "src": "/example_tracks/Artik.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Барских Макс",
+    "song": "Подруга ночь",
+    "length": "3.28",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Би-2",
+    "song": "Полковнику никто не пишет",
+    "length": "4.24",
+    "src": "/example_tracks/polkovnik.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Билан Дима",
+    "song": "Держи",
+    "length": "3.44",
+    "src": "/example_tracks/derzhi.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Gayazov$ Brother$",
+    "song": "Малиновая Лада",
+    "length": "3.37",
+    "src": "/example_tracks/lada.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Губин Андрей",
+    "song": "Девушки как звёзды",
+    "length": "3.59",
+    "src": "/example_tracks/gubin.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Губин Андрей",
+    "song": "Ночь",
+    "length": "3.40",
+    "src": "/example_tracks/no4.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Губин Андрей",
+    "song": "Зима-холода",
+    "length": "3.49",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Dabro",
+    "song": "Юность",
+    "length": "3.41",
+    "src": "/example_tracks/unost.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Дискотека Авария",
+    "song": "Новогодняя",
+    "length": "4.49",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Дорн Иван",
+    "song": "Стыцамэн",
+    "length": "4.08",
+    "src": "/example_tracks/stycaman.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Жуки",
+    "song": "Батарейка",
+    "length": "3.44",
+    "src": "/example_tracks/batareika.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Звери",
+    "song": "Районы кварталы",
+    "length": "3.28",
+    "src": "/example_tracks/Rayony.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Zivert",
+    "song": "Beverly Hills",
+    "length": "3.41",
+    "src": "/example_tracks/zivert.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Zdob Si Zdub",
+    "song": "Видели ночь",
+    "length": "4.40",
+    "src": "/example_tracks/videliNo4.mp3",
+    "type": "Отечественные"
+  },
+
+  {
+    "author": "Иванушки International",
+    "song": "Тополиный Пух",
+    "length": "3.18",
+    "src": "/example_tracks/ivanushki.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Кино",
+    "song": "Перемен",
+    "length": "4.56",
+    "src": "/example_tracks/peremen.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Король и Шут",
+    "song": "Лесник",
+    "length": "3.02",
+    "src": "/example_tracks/lesnik.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Леприконсы",
+    "song": "Хали Гали Паратрупер",
+    "length": "4.08",
+    "src": "/example_tracks/haligali.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Лепс Григорий",
+    "song": "Самый лучший день",
+    "length": "4.05",
+    "src": "/example_tracks/leps.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "LOBODA",
+    "song": "К черту любовь",
+    "length": "3.38",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Люся Чеботина",
+    "song": "Солнце Монако",
+    "length": "2.35",
+    "src": "/example_tracks/monako.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Ляпис Трубецкой",
+    "song": "Ау",
+    "length": "3.54",
+    "src": "/example_tracks/Au.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Меладзе",
+    "song": "Притяженья больше нет",
+    "length": "4.04",
+    "src": "/example_tracks/meladze.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Мираж",
+    "song": "Музыка Нас Связала",
+    "length": "4.29",
+    "src": "/example_tracks/miraj.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "MONATIK",
+    "song": "УВЛИУВТ",
+    "length": "4.04",
+    "src": "/example_tracks/Monatika.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Мумий Тролль",
+    "song": "Владивосток 2000",
+    "length": "2.38",
+    "src": "/example_tracks/Vladivostok2000.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Николаев Игорь",
+    "song": "Выпьем За Любовь",
+    "length": "4.07",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Отпетые Мошенники",
+    "song": "Люби меня люби",
+    "length": "4.09",
+    "src": "/example_tracks/lubiMenyaLubi.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Отпетые Мошенники",
+    "song": "Девушки",
+    "length": "3.52",
+    "src": "/example_tracks/devushkiRaznye.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Сектор Газа",
+    "song": "Пора домой",
+    "length": "3.54",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Сектор газа",
+    "song": "30 лет",
+    "length": "4.09",
+    "src": "/example_tracks/30let.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Пирожков Артур",
+    "song": "Зацепила",
+    "length": "3.26",
+    "src": "/example_tracks/zacepila.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "RASA",
+    "song": "Пчеловод",
+    "length": "2.52",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Руки Вверх!",
+    "song": "Он тебя целует",
+    "length": "4.06",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Руки Вверх!",
+    "song": "18 мне уже",
+    "length": "4.08",
+    "src": "/example_tracks/18mne.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Руки Вверх!",
+    "song": "Ай яй яй",
+    "length": "3.49",
+    "src": "/example_tracks/AiDev4onka.mp3",
+    "type": "Отечественные"
+  },
+
+  {
+    "author": "Filatov & Karas",
+    "song": "Лирика (Сектор Газа)",
+    "length": "4.23",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Hi-Fi",
+    "song": "Седьмой лепесток",
+    "length": "3.12",
+    "src": "/example_tracks/lepestok.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Элджей, Feduk",
+    "song": "Розовое вино",
+    "length": "4.01",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Ю. Шатунов",
+    "song": "Седая Ночь",
+    "length": "5.10",
+    "src": "/example_tracks/sedaya_no4.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Шура",
+    "song": "Отшумели летние дожди",
+    "length": "3.52",
+    "src": "",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Шура",
+    "song": "Ты не верь слезам",
+    "length": "3.10",
+    "src": "/example_tracks/shura.mp3",
+    "type": "Отечественные"
+  },
+  {
+    "author": "Backstreet Boys",
+    "song": "Everybody",
+    "length": "4.11",
+    "src": "/example_tracks/everybody1.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Bon Jovi",
+    "song": "Always",
+    "length": "6.01",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Bon Jovi",
+    "song": "It's My Life",
+    "length": "3.50",
+    "src": "/example_tracks/itsMyLife.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Coldplay",
+    "song": "Adventure of a Lifetime",
+    "length": "4.31",
+    "src": "/example_tracks/adventure.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Depeche Mode",
+    "song": "Personal Jesus",
+    "length": "3.30",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Duran Duran",
+    "song": "Ordinary World",
+    "length": "5.48",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Eagles",
+    "song": "Hotel California",
+    "length": "6.47",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Eiffel 65",
+    "song": "Blue (Da Ba Dee)",
+    "length": "4.43",
+    "src": "/example_tracks/blue.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Europe",
+    "song": "The Final Countdown",
+    "length": "4.24",
+    "src": "/example_tracks/finalCountdown.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Genesis",
+    "song": "I Can't Dance",
+    "length": "3.56",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Gorky Park",
+    "song": "Moscow Calling",
+    "length": "5.01",
+    "src": "/example_tracks/moscowCalling.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Haddaway",
+    "song": "What Is Love",
+    "length": "4.33",
+    "src": "/example_tracks/whatIsLove.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Imany",
+    "song": "Don't Be So Shy (Filatov & Karas Rmx)",
+    "length": "3.15",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Justin Timberlake",
+    "song": "Can't Stop the feeling!",
+    "length": "4.01",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Lady Gaga",
+    "song": "Poker Face",
+    "length": "3.59",
+    "src": "/example_tracks/pokerface.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Linkin Park",
+    "song": "In the End",
+    "length": "3.14",
+    "src": "/example_tracks/inTheEnd.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Mark Ronson feat. Bruno Mars",
+    "song": "Uptown Funk",
+    "length": "3.35",
+    "src": "/example_tracks/uptownFunk.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Maroon 5",
+    "song": "This Love",
+    "length": "3.33",
+    "src": "/example_tracks/thisLove.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Maroon 5",
+    "song": "Moves Like Jagger",
+    "length": "3.28",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "MARUV",
+    "song": "Drunk Groove",
+    "length": "3.53",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Michael Jackson",
+    "song": "Smooth Criminal",
+    "length": "4.30",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Michel Telo",
+    "song": "Nosa",
+    "length": "2.49",
+    "src": "/example_tracks/nosa.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Modern Talking",
+    "song": "You're My Heart",
+    "length": "3.49",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Nickelback",
+    "song": "Far Away",
+    "length": "4.00",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Nickelback",
+    "song": "How You Remind Me",
+    "length": "3.47",
+    "src": "/example_tracks/remindMe.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "The Offspring",
+    "song": "The kids aren't allright",
+    "length": "3.02",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "O-Zone",
+    "song": "Dragostea Din Tei",
+    "length": "3.31",
+    "src": "/example_tracks/dragonsteadintei.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Papa Roach",
+    "song": "Last Resort",
+    "length": "3.26",
+    "src": "/example_tracks/lastResort.mp3",
+    "type": "Зарубежные"
+  },
+
+  {
+    "author": "The Rasmus",
+    "song": "In the Shadows",
+    "length": "4.02",
+    "src": "/example_tracks/Rasmus.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Ricky Martin",
+    "song": "Livin' la Vida Loca",
+    "length": "4.05",
+    "src": "/example_tracks/vidaLoca.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Roxette",
+    "song": "Sleeping In My Car",
+    "length": "3.50",
+    "src": "/example_tracks/sleepingInMyCar.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Savage Garden",
+    "song": "To the Moon & Back",
+    "length": "4.59",
+    "src": "/example_tracks/toTheMoonAndBack.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Scorpions",
+    "song": "Wind Of Change",
+    "length": "5.11",
+    "src": "/example_tracks/windOfChange.mp3",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "SNAP!",
+    "song": "Rhythm Is A Dancer",
+    "length": "3.45",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Tears For Fears",
+    "song": "Shout",
+    "length": "6.16",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Timbaland feat. OneRepublic",
+    "song": "Apologize",
+    "length": "3.12",
+    "src": "",
+    "type": "Зарубежные"
+  },
+  {
+    "author": "Wham!",
+    "song": "Last Christmas",
+    "length": "4.37",
+    "src": "",
+    "type": "Зарубежные"
+  }
+]
