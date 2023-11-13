@@ -1,18 +1,18 @@
-import links from "../../data/links";
+import links from '../../data/links';
 const { downloads } = links;
 const buttons = [
   {
-    text: "Скачать репертуар",
+    text: 'Репертуар',
     href: downloads.repertoire,
     id: 221,
   },
   {
-    text: "Бытовой райдер",
+    text: 'Бытовой райдер',
     href: downloads.bytRider,
     id: 222,
   },
   {
-    text: "Технический райдер",
+    text: 'Технический райдер',
     href: downloads.techRider,
     id: 223,
   },

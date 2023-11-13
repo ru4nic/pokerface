@@ -1,24 +1,24 @@
 //MUI
-import { Button } from "@mui/material";
-import PhoneAndroid from "@mui/icons-material/PhoneAndroid";
-import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
+import { Button } from '@mui/material';
+import PhoneAndroid from '@mui/icons-material/PhoneAndroid';
+import DraftsOutlinedIcon from '@mui/icons-material/DraftsOutlined';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 //@ts-ignore
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 
-import Logo from "../../UI/Logo";
-import Socials from "../../UI/Socials";
-import { Container } from "../../base_styles/styles";
+import Logo from '../../UI/Logo';
+import Socials from '../../UI/Socials';
+import { Container } from '../../base_styles/styles';
 
-import { bkrndNavBar, redTheme, whiteText } from "../../base_styles/Vars";
-import footerColumnData from "./data";
+import { bkrndNavBar, redTheme, whiteText } from '../../base_styles/Vars';
+import footerColumnData from './data';
 
 const SectionFooter = styled.footer`
   background-color: ${bkrndNavBar};
   width: auto;
   color: ${whiteText};
-  font-family: "IbmLight";
+  font-family: 'IbmLight';
 `;
 const TopMenu = styled.menu`
   display: flex;
@@ -56,7 +56,7 @@ const List = styled.div`
 const Underline = styled.span`
   position: relative;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
@@ -67,7 +67,7 @@ const Underline = styled.span`
   }
 `;
 const StyledLink = styled(Link)`
-  display: ${(props) => (props.$copyright ? "" : "block")};
+  display: ${(props) => (props.$copyright ? '' : 'block')};
   font-size: 0.9rem;
   text-decoration: none;
   color: inherit;
@@ -87,12 +87,12 @@ const StyledLink = styled(Link)`
 
 const ListName = styled.div`
   font-size: 1rem;
-  font-family: "IbmBold";
+  font-family: 'IbmBold';
   margin-bottom: 1rem;
 `;
 const Copyright = styled.div`
   font-size: 0.8em;
-  font-family: "IbmExtraLight";
+  font-family: 'IbmExtraLight';
   ${StyledLink} {
     font-size: 1em;
   }
@@ -111,7 +111,7 @@ const BottomMenu = styled.menu`
   border-top: 1px solid rgba(233, 236, 239, 0.024);
 `;
 
-declare module "@mui/material/Button" {
+declare module '@mui/material/Button' {
   interface ButtonPropsColorOverrides {
     footer: true;
   }
@@ -151,7 +151,8 @@ function Footer() {
             </Button>
           </List>
           {footerColumnData.map((column) => {
-            if (column.header === "Разделы") {
+            //Размещаем ссылки по полонкам в футере
+            if (column.header === 'Разделы') {
               return (
                 <List key={column.header}>
                   <ListName>{column.header}</ListName>
@@ -186,7 +187,7 @@ function Footer() {
         <BottomMenu>
           <Copyright>
             <Name>
-              Разработчик{" "}
+              Разработчик{' '}
               <StyledLink
                 href="https://t.me/ru4nic"
                 as="a"
@@ -198,7 +199,7 @@ function Footer() {
               </StyledLink>
             </Name>
             <Name>
-              Дизайнер{" "}
+              Дизайнер{' '}
               <StyledLink
                 href="https://vk.com/yuriykuldo"
                 as="a"

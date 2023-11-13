@@ -1,20 +1,20 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import styled from "styled-components";
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import styled from 'styled-components';
 
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
 import {
   // toggleSongChecked,
   Song as typeSong,
-} from "../../../slices/songSlicer";
+} from '../../../slices/songSlicer';
 
-import Inner from "./Inner";
-import { Section, Title, Container, Paragraph } from "../../base_styles/styles";
-import { addSong, clearCart } from "../../../slices/songSlicer";
-import DownloadIcon from "@mui/icons-material/Download";
-import { StyledButton } from "../../UI/Button/StyledButton";
-import { buttons } from "./data";
-import links from "../../data/links";
+import Inner from './Inner';
+import { Section, Title, Container, Paragraph } from '../../base_styles/styles';
+import { addSong, clearCart } from '../../../slices/songSlicer';
+import { ImFilePdf } from 'react-icons/im';
+import { StyledButton } from '../../UI/Button/StyledButton';
+import { buttons } from './data';
+import links from '../../data/links';
 
 const WrapperButtons = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ const Repertoire = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const initialCart = localStorage.getItem("cart"); //Получаем данные из localStorage
+    const initialCart = localStorage.getItem('cart'); //Получаем данные из localStorage
 
     if (initialCart) {
       //Если LocalStorage не пуст, то
@@ -63,11 +63,11 @@ const Repertoire = () => {
               <StyledButton
                 href={href}
                 key={id}
-                endIcon={<DownloadIcon />}
+                endIcon={<ImFilePdf />}
                 sx={{
-                  width: "14.7rem",
-                  "@media (max-width: 900px)": {
-                    width: "15rem",
+                  width: '14.7rem',
+                  '@media (max-width: 900px)': {
+                    width: '15rem',
                   },
                 }}
               >

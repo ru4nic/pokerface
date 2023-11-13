@@ -1,4 +1,4 @@
-import links from "../../data/links";
+import links from '../../data/links';
 
 interface FooterColumnData {
   header: string;
@@ -7,36 +7,39 @@ interface FooterColumnData {
 
 const footerColumnData: FooterColumnData[] = [
   {
-    header: "Разделы",
+    header: 'Разделы',
     items: [
-      { name: "О группе", link: links.sections.about },
-      { name: "Видео", link: links.sections.video },
-      { name: "Приемущства", link: links.sections.features },
-      { name: "Заказчикам", link: links.sections.forClients },
+      { name: 'О группе', link: links.sections.about },
+      { name: 'Видео', link: links.sections.video },
+      { name: 'Приемущства', link: links.sections.features },
+      { name: 'Заказчикам', link: links.sections.forClients },
     ],
   },
   {
-    header: "Скачать",
+    header: 'Скачать',
     items: [
       {
-        name: "Репертуар",
+        name: 'Репертуар',
         link: links.downloads.repertoire,
       },
       {
-        name: "Бытовой райдер",
+        name: 'Бытовой райдер',
         link: links.downloads.bytRider,
       },
       {
-        name: "Технический райдер",
+        name: 'Технический райдер',
         link: links.downloads.techRider,
       },
     ],
   },
   {
-    header: "Партнеры",
+    header: 'Партнеры',
     items: [
-      { name: "Recastman studio", link: "https://vk.com/recastman_studio" },
-      { name: "Svetlana Samoletova", link: "https://vk.com/s_samoletova" },
+      { name: 'Recastman studio', link: 'https://vk.com/recastman_studio' },
+      {
+        name: 'Svetlana Samoletova',
+        link: 'https://ru4nic.github.io/s_samoletova/',
+      },
     ],
   },
 ];
