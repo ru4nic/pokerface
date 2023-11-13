@@ -15,8 +15,8 @@ import headImg from '../../../assets/images/bknd_head.jpg';
 import { darkGrey, whiteText } from '../../base_styles/Vars';
 
 const SectionIntro = styled.section`
-  background: url(${headImg}) #131313;
-
+  background: url(${headImg});
+  background-color: #131313;
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-attachment: fixed;

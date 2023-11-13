@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import icon from "../../../assets/images/icons/icons8-youtube-play.svg";
-import { whiteText } from "../../base_styles/Vars";
+import icon from '../../../assets/images/icons/icons8-youtube-play.svg';
+import { whiteText } from '../../base_styles/Vars';
 
 const IconPlay = styled.div`
   width: 25%;
@@ -25,14 +25,14 @@ const ItemDesc = styled.div<{ $desc?: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "IbmLight";
+  font-family: 'IbmLight';
   width: 100%;
   font-weight: normal;
   height: fit-content;
   font-size: 1rem;
   padding: 0.5rem;
   color: ${whiteText};
-  display: ${(props) => (props.$desc ? "" : "none")};
+  display: ${(props) => (props.$desc ? '' : 'none')};
   @media (max-height: 820px) and (orientation: landscape) {
     font-size: 0.9rem;
   }
@@ -111,7 +111,7 @@ const VideoPreview = ({
   desc,
 }: VideoPreviewProps) => {
   return (
-    <VideoItem onClick={handleVideoClick} $src={src}>
+    <VideoItem onClick={handleVideoClick} $src={src} className="video_item">
       {!isActive && (
         <>
           <IconPlay />
