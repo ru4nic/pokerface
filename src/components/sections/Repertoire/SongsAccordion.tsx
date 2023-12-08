@@ -1,14 +1,14 @@
-import { memo, Dispatch, SetStateAction } from "react";
-import styled from "styled-components";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Song from "./Song";
+import { memo, Dispatch, SetStateAction } from 'react';
+import styled from 'styled-components';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Song from './Song';
 
-import { Songs as typeSongs } from "./Inner";
+import { Songs as typeSongs } from './Inner';
 
-import { darkGrey, greyText } from "../../base_styles/Vars";
+import { darkGrey, greyText } from '../../base_styles/Vars';
 
 const Title = styled.h4`
   margin: 0;
@@ -27,7 +27,7 @@ const Length = styled.h4`
 `;
 
 export interface SongsProps {
-  lang: "Зарубежные" | "Отечественные";
+  lang: 'Зарубежные' | 'Отечественные';
   ruSongs?: typeSongs[];
   engSongs?: typeSongs[];
   srcSong: null | string;
@@ -45,18 +45,18 @@ const Songs = ({
       className="accordion"
       elevation={4}
       sx={{
-        backgroundColor: "#ffffff80",
-        width: "40%",
-        margin: "auto",
-        transition: "width 1s ease",
-        "&.MuiPaper-root.Mui-expanded": {
-          width: "40rem",
-          margin: "auto",
+        backgroundColor: '#ffffff80',
+        width: '40%',
+        margin: 'auto',
+        transition: 'width 1s ease',
+        '&.MuiPaper-root.Mui-expanded': {
+          width: '40rem',
+          margin: 'auto',
         },
-        "@media (max-width: 900px)": {
-          width: "auto",
-          "&.MuiPaper-root.Mui-expanded": {
-            width: "auto",
+        '@media (max-width: 900px)': {
+          width: 'auto',
+          '&.MuiPaper-root.Mui-expanded': {
+            width: 'auto',
           },
         },
       }}
@@ -67,7 +67,7 @@ const Songs = ({
       <AccordionDetails>
         <Length>Длительность</Length>
         <ul>
-          {lang === "Отечественные" && ruSongs
+          {lang === 'Отечественные' && ruSongs
             ? ruSongs.map((song) => {
                 return (
                   <Song

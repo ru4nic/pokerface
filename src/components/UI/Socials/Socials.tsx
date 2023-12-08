@@ -1,9 +1,9 @@
-import Tooltip from "@mui/material/Tooltip";
-import { Wrapper, Item } from "./styles";
-import links from "./data";
+import Tooltip from '@mui/material/Tooltip';
+import { Wrapper, Item } from './styles';
+import links from './data';
 
 type SocialsProps = {
-  section?: string;
+  section?: 'appBar' | 'footer';
   inView?: boolean;
 };
 function Socials({ section }: SocialsProps) {

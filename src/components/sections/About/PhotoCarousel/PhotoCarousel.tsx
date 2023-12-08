@@ -1,34 +1,34 @@
-import { useEffect, useRef } from "react";
-import { useInView } from "react-intersection-observer";
+import { useEffect, useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 //@ts-ignore
 
-import { Swiper as SwiperType } from "swiper/types";
-import { register } from "swiper/element";
-import { Navigation, Zoom, Pagination } from "swiper/modules";
-import { motion } from "framer-motion";
-import Box from "@mui/material/Box";
-import Skeleton from "@mui/material/Skeleton";
-import { SwiperOptions } from "swiper/types";
+import { Swiper as SwiperType } from 'swiper/types';
+import { register } from 'swiper/element';
+import { Navigation, Zoom, Pagination } from 'swiper/modules';
+import { motion } from 'framer-motion';
+import Box from '@mui/material/Box';
+import Skeleton from '@mui/material/Skeleton';
+import { SwiperOptions } from 'swiper/types';
 
-import ph_studio_red_1 from "../../../../assets/images/studio_red_3.jpg";
+import ph_studio_red_1 from '../../../../assets/images/studio_red_3.webp';
 
-import ph_collage from "../../../../assets/images/collage.jpg";
-import ph_4_210723 from "../../../../assets/images/IMG_4_210723.jpg";
-import ph_22_210723 from "../../../../assets/images/IMG_22_210723.jpg";
-import ph_45_210723 from "../../../../assets/images/IMG_45_210723.jpg";
-import ph_26_210723 from "../../../../assets/images/IMG_26_210723.jpg";
+import ph_collage from '../../../../assets/images/collage.webp';
+import ph_4_210723 from '../../../../assets/images/IMG_4_210723.webp';
+import ph_22_210723 from '../../../../assets/images/IMG_22_210723.webp';
+import ph_45_210723 from '../../../../assets/images/IMG_45_210723.webp';
+import ph_26_210723 from '../../../../assets/images/IMG_26_210723.webp';
 
-import ph_IMG_3559 from "../../../../assets/images/IMG_3559.jpg";
-import ph_IMG_3615 from "../../../../assets/images/IMG_3615.jpg";
-import ph_IMG_3893 from "../../../../assets/images/IMG_3893.jpg";
-import ph_IMG_11 from "../../../../assets/images/IMG_11.jpg";
-import ph_IMG_66 from "../../../../assets/images/IMG_66.jpg";
-import ph_IMG_2261 from "../../../../assets/images/IMG_2261.jpg";
-import img_skeleton from "../../../../assets/images/Skeleton.png";
+import ph_IMG_3559 from '../../../../assets/images/IMG_3559.webp';
+import ph_IMG_3615 from '../../../../assets/images/IMG_3615.webp';
+import ph_IMG_3893 from '../../../../assets/images/bknd_head.webp';
+import ph_IMG_11 from '../../../../assets/images/IMG_11.webp';
+import ph_IMG_66 from '../../../../assets/images/IMG_66.webp';
+import ph_IMG_2261 from '../../../../assets/images/IMG_2261.webp';
+import img_skeleton from '../../../../assets/images/Skeleton.webp';
 
-import animation from "../../../settings/animation";
-import styled from "styled-components";
-import { redTheme } from "../../../base_styles/Vars";
+import animation from '../../../settings/animation';
+import styled from 'styled-components';
+import { redTheme } from '../../../base_styles/Vars';
 
 const images = [
   ph_collage,
@@ -109,9 +109,9 @@ const MainSwiper = ({ children, loop }: MainSwiperProps) => {
         `,
       ],
       injectStylesUrls: [
-        "./navigation-element.min.css",
-        "./zoom-element.min.css",
-        "./pagination-element.min.css",
+        './navigation-element.min.css',
+        './zoom-element.min.css',
+        './pagination-element.min.css',
       ],
     };
     if (swiperElRef.current) {
@@ -147,11 +147,11 @@ const PhotoCarousel = () => {
       <Box
         ref={ref}
         sx={{
-          display: "flex",
-          alignItems: "center",
-          flexDirection: "column",
-          justifyContent: "center",
-          padding: "5em 0 0 0",
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          padding: '5em 0 0 0',
         }}
       >
         {inView ? (
@@ -169,8 +169,8 @@ const PhotoCarousel = () => {
             })}
           </MainSwiper>
         ) : (
-          <Skeleton variant="rounded" sx={{ bgcolor: "grey.900" }}>
-            <MainSwiper loop={false}>
+          <MainSwiper loop={false}>
+            <Skeleton variant="rounded" sx={{ bgcolor: 'grey.900' }}>
               <swiper-slide>
                 <SliderWrapper>
                   {/* <div className="swiper-zoom-container"> */}
@@ -178,8 +178,8 @@ const PhotoCarousel = () => {
                   {/* </div> */}
                 </SliderWrapper>
               </swiper-slide>
-            </MainSwiper>
-          </Skeleton>
+            </Skeleton>
+          </MainSwiper>
         )}
       </Box>
     </motion.div>

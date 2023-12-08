@@ -1,4 +1,4 @@
-import logo from '../../assets/images/PokerFace_logo_1.png';
+import logo from '../../assets/images/PokerFace_logo_1.webp';
 import { StyledLogo } from '../base_styles/styles';
 type LogoProps = {
   section?: string;

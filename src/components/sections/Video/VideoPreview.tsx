@@ -42,30 +42,20 @@ const StyledIframe = styled.iframe`
   height: 100%;
 `;
 
-const VideoItem = styled.a<{ $src: string }>`
+const VideoItem = styled.div<{ $src: string }>`
   background-image: ${(props) => `url(${props.$src})`};
   flex-basis: 32%;
   flex-grow: 1;
-  /* flex-shrink: 1; */
   position: relative;
-  justify-content: center;
-  /* background-size: 100%; */
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.75;
   border-radius: 0.3rem;
-  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42),
-    0 3px 20px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.3);
   transition: opacity 0.4s ease;
   overflow: hidden;
   aspect-ratio: 16/9;
   min-width: 0;
-  /* &:nth-last-child(1) {
-    
-    flex-basis: 50%;
-    flex-shrink: 0;
-    flex-grow: 0;
-  } */
   &:hover {
     cursor: pointer;
     opacity: 1;

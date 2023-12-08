@@ -35,7 +35,7 @@ export const Wrapper = styled.div`
     font-weight: normal;
   }
 `;
-export const Manager = styled(motion.li)`
+export const Manager = styled(motion.div)`
   text-align: center;
   z-index: 0;
 `;

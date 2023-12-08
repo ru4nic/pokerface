@@ -1,7 +1,7 @@
-import TiltParalax from "../../UI/TiltParalax";
-import animation from "../../settings/animation";
+import TiltParalax from '../../UI/TiltParalax';
+import animation from '../../settings/animation';
 
-import { IconWrapper, StyledIcon, CardTitle, CardDesc } from "./feature_styles";
+import { IconWrapper, StyledIcon, CardTitle, CardDesc } from './feature_styles';
 type CardFeatureProps = {
   icon: string;
   title: string;

@@ -6,11 +6,11 @@ import { useDispatch } from 'react-redux';
 import {
   // toggleSongChecked,
   Song as typeSong,
-} from '../../../slices/songSlicer';
+} from '../../../slices/songSlice';
 
 import Inner from './Inner';
 import { Section, Title, Container, Paragraph } from '../../base_styles/styles';
-import { addSong, clearCart } from '../../../slices/songSlicer';
+import { addSong, clearCart } from '../../../slices/songSlice';
 import { ImFilePdf } from 'react-icons/im';
 import { StyledButton } from '../../UI/Button/StyledButton';
 import { buttons } from './data';

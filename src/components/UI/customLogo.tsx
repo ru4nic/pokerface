@@ -1,18 +1,18 @@
-import styled from "styled-components";
-import font from "../../assets/fonts/palatinolinotype_roman.ttf";
-import smile from "../../assets/images/PokerFace logo_smile.png";
+import styled from 'styled-components';
+import font from '../../assets/fonts/palatinolinotype_roman.ttf';
+import smile from '../../assets/images/PokerFace_logo_smile.webp';
 import {
   heightOfNavBarDesktop,
   heightOfNavBarMobile,
-} from "../base_styles/Vars";
+} from '../base_styles/Vars';
 
 const Wrapper = styled.div`
   @font-face {
     font-display: swap;
-    font-family: "Lati";
+    font-family: 'Lati';
     font-style: normal;
     font-weight: 400;
-    src: url(${font}) format("truetype");
+    src: url(${font}) format('truetype');
   }
   display: flex;
   flex-direction: column;
@@ -49,7 +49,7 @@ const SmileImage = styled.img`
 `;
 const Title = styled.h1`
   line-height: 1;
-  font-family: "Lati";
+  font-family: 'Lati';
   font-weight: normal;
   font-style: normal;
   font-size: 3em;
@@ -78,8 +78,8 @@ const LetterF = styled.span`
 
 const Desc = styled.span`
   font-size: 0.7em;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   font-style: normal;
   text-transform: uppercase;

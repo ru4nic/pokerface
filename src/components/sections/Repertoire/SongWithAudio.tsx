@@ -5,17 +5,17 @@ import {
   Dispatch,
   SetStateAction,
   MouseEventHandler,
-} from "react";
-import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import PauseCircleIcon from "@mui/icons-material/PauseCircle";
-import IconButton from "@mui/material/IconButton";
+} from 'react';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
+import PauseCircleIcon from '@mui/icons-material/PauseCircle';
+import IconButton from '@mui/material/IconButton';
 
-import { PlayButton } from "./Song";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../../store/store";
-import { setPlaying } from "../../../slices/audioSlicer";
+import { PlayButton } from './Song';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../../../store/store';
+import { setPlaying } from '../../../slices/audioSlice';
 
-declare module "@mui/material/SvgIcon" {
+declare module '@mui/material/SvgIcon' {
   interface SvgIconPropsColorOverrides {
     redPlay: true;
   }
@@ -63,15 +63,15 @@ const SongWithAudio = ({ src, srcSong, setSrcSong, song }: SongWithAudio) => {
           {srcSong === src && currentPlayingSong && !audioPlayerState ? (
             <PauseCircleIcon
               fontSize="large"
-              color={checked ? "inherit" : "redPlay"}
+              color={checked ? 'inherit' : 'redPlay'}
             />
           ) : (
             <PlayCircleIcon
               fontSize="large"
               color={
                 srcSong === src && audioPlayerState && !checked
-                  ? "redPlay"
-                  : "inherit"
+                  ? 'redPlay'
+                  : 'inherit'
               }
             />
           )}

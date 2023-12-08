@@ -11,7 +11,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { StyledButton } from '../../UI/Button/StyledButton';
 import CustomLogo from '../../UI/customLogo';
-import headImg from '../../../assets/images/bknd_head.jpg';
+import headImg from '../../../assets/images/bknd_head.webp';
 import { darkGrey, whiteText } from '../../base_styles/Vars';
 
 const SectionIntro = styled.section`

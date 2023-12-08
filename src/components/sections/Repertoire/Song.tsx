@@ -1,30 +1,30 @@
-import { Dispatch, SetStateAction } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import SongWithAudio from "./SongWithAudio";
-import styled from "styled-components";
+import { Dispatch, SetStateAction } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import SongWithAudio from './SongWithAudio';
+import styled from 'styled-components';
 import {
   checkedAuthor,
   checkedText,
   darkGrey,
   greyText,
   redPlay,
-} from "../../base_styles/Vars";
+} from '../../base_styles/Vars';
 import {
   removeSong,
   addSong,
   toggleSongChecked,
-} from "../../../slices/songSlicer";
+} from '../../../slices/songSlice';
 
-import { RootState } from "../../../store/store";
-import { Song as typeSong } from "../../../slices/songSlicer";
+import { RootState } from '../../../store/store';
+import { Song as typeSong } from '../../../slices/songSlice';
 
 const Item = styled.li<{ $checked?: boolean }>`
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "play author -"
-    "play song length";
+    'play author -'
+    'play song length';
   align-items: center;
   cursor: pointer;
   position: relative;
@@ -33,20 +33,20 @@ const Item = styled.li<{ $checked?: boolean }>`
   font-family: IbmLight;
   user-select: none;
   text-decoration: initial;
-  background-color: ${(props) => (props.$checked ? redPlay : "")};
+  background-color: ${(props) => (props.$checked ? redPlay : '')};
   transition: background-color 0.2s ease, border-radius 0.2s ease,
     color 0.5s ease;
   color: ${(props) => (props.$checked ? checkedAuthor : darkGrey)};
   margin: 0.8rem 0.4rem;
   box-shadow: ${(props) =>
     props.$checked
-      ? "2px 2px 3px rgba(0, 0, 0, 0.493)"
-      : "1px 2px 3px 1px rgba(0, 0, 0, 0.187)"};
-  border-radius: ${(props) => (props.$checked ? "15px" : "5px")};
+      ? '2px 2px 3px rgba(0, 0, 0, 0.493)'
+      : '1px 2px 3px 1px rgba(0, 0, 0, 0.187)'};
+  border-radius: ${(props) => (props.$checked ? '15px' : '5px')};
   text-overflow: ellipsis;
   overflow: hidden;
   column-gap: 0.5rem;
-  /* border: ${(props) => props.$checked && "1px solid #8a3131"}; */
+  /* border: ${(props) => props.$checked && '1px solid #8a3131'}; */
   &:last-child {
     margin-bottom: 0;
   }
@@ -62,7 +62,7 @@ const Item = styled.li<{ $checked?: boolean }>`
   @media screen and (max-width: 450px) {
     font-size: 12px;
     padding: 0.75rem 0.9rem;
-    border-radius: ${(props) => props.$checked && "7px"};
+    border-radius: ${(props) => props.$checked && '7px'};
     &:last-child {
       margin-bottom: 0.5rem;
     }
@@ -70,7 +70,7 @@ const Item = styled.li<{ $checked?: boolean }>`
 `;
 
 const Author = styled.div<{ $checked?: boolean }>`
-  font-family: "RobotoMedium";
+  font-family: 'RobotoMedium';
   color: ${(props) => (props.$checked ? checkedAuthor : darkGrey)};
   grid-area: author;
   text-overflow: ellipsis;
@@ -163,7 +163,7 @@ const Song = ({
     >
       <Author $checked={checked}>{author}</Author>
       <SongName $checked={checked}>{song}</SongName>
-      <Length $checked={checked}>{length.replace(".", ":")}</Length>
+      <Length $checked={checked}>{length.replace('.', ':')}</Length>
       {src ? (
         <SongWithAudio
           src={src}

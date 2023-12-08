@@ -1,16 +1,16 @@
-import { useEffect, useState, memo } from "react";
+import { useEffect, useState, memo } from 'react';
 
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 // import PdfSongsRender from '../UI/PdfSongsRender';
 
-import Popup from "../../UI/Popup";
+import Popup from '../../UI/Popup';
 
-import SongsAccordion from "./SongsAccordion";
+import SongsAccordion from './SongsAccordion';
 
-import AudioPlayerFixed from "../../UI/AudioPlayerFixed";
+import AudioPlayerFixed from '../../UI/AudioPlayerFixed';
 
 type TypeSong = {
-  type: "Отечественные" | "Зарубежные";
+  type: 'Отечественные' | 'Зарубежные';
 };
 export interface Songs {
   author: string;
@@ -30,13 +30,13 @@ const Inner = () => {
 
   //----------------------------------------------------------------------------//
 
-  const linkJson = "./listOfSongs.json";
+  const linkJson = './listOfSongs.json';
   // const linkJson = 'https://pokerfaceband.ru/listOfSongs.json';
   const ruSongs: Songs[] = listOfSongs.filter(
-    (song: TypeSong) => song.type === "Отечественные"
+    (song: TypeSong) => song.type === 'Отечественные'
   );
   const engSongs: Songs[] = listOfSongs.filter(
-    (song: TypeSong) => song.type === "Зарубежные"
+    (song: TypeSong) => song.type === 'Зарубежные'
   );
 
   useEffect(() => {

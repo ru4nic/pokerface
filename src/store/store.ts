@@ -1,6 +1,6 @@
-import { configureStore } from "@reduxjs/toolkit";
-import cartSongReducer from "../slices/songSlicer";
-import audioSlice from "../slices/audioSlicer";
+import { configureStore } from '@reduxjs/toolkit';
+import cartSongReducer from '../slices/songSlice';
+import audioSlice from '../slices/audioSlice';
 
 export const store = configureStore({
   reducer: {

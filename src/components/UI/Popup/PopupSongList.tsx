@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../../store/store';
 import styled from 'styled-components';
-import { Song as typeSong } from '../../../slices/songSlicer';
-import { removeSong } from '../../../slices/songSlicer';
+import { Song as typeSong } from '../../../slices/songSlice';
+import { removeSong } from '../../../slices/songSlice';
 import DeleteForeverRoundedIcon from '@mui/icons-material/DeleteForeverRounded';
 import { Author } from '../../sections/Repertoire/Song';
 import { PlayButton, SongName, Length } from '../../sections/Repertoire/Song';

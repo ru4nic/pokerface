@@ -1,16 +1,16 @@
-import { useRef, Dispatch, SetStateAction, useEffect } from "react";
-import styled from "styled-components";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import AudioPlayer from "react-h5-audio-player";
-import "react-h5-audio-player/lib/styles.css";
+import { useRef, Dispatch, SetStateAction, useEffect } from 'react';
+import styled from 'styled-components';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch, useSelector } from 'react-redux';
 
-import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
-import IconButton from "@mui/material/IconButton";
-import { setPlaying } from "../../slices/audioSlicer";
-import { RootState } from "../../store/store";
-import { greyText } from "../base_styles/Vars";
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import IconButton from '@mui/material/IconButton';
+import { setPlaying } from '../../slices/audioSlice';
+import { RootState } from '../../store/store';
+import { greyText } from '../base_styles/Vars';
 
 const StyledAudioPlayer = styled.div`
   position: fixed;
@@ -64,7 +64,7 @@ const AudioPlayerContainer = styled.div`
   }
   .rhap_time {
     color: #777;
-    font-family: "IbmLight";
+    font-family: 'IbmLight';
   }
   .rhap_button-clear {
     color: ${greyText};
@@ -95,7 +95,7 @@ const AudioPlayerFixed = ({ setSrcSong, srcSong }: AudioPlayerFixedProps) => {
     (state: RootState) => state.setPlaying.isPaused
   );
 
-  const tabletsAndMobiles = useMediaQuery("(max-width:900px)");
+  const tabletsAndMobiles = useMediaQuery('(max-width:900px)');
   const handleCloseAudioPlayer = () => setSrcSong(null); //Закрываем аудиоплеер при клике на крестик
 
   useEffect(() => {
@@ -114,7 +114,8 @@ const AudioPlayerFixed = ({ setSrcSong, srcSong }: AudioPlayerFixedProps) => {
           <IconButton onClick={handleCloseAudioPlayer}>
             <CloseOutlinedIcon
               color="warning"
-              fontSize={tabletsAndMobiles ? "large" : "medium"}
+              fontSize={tabletsAndMobiles ? 'large' : 'medium'}
+              data-test="close-audioplayer"
             />
           </IconButton>
         </AudioPlayerCloseButton>

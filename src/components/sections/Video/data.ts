@@ -1,11 +1,11 @@
-import img_01 from '../../../assets/images/preview1.jpg';
-import img_02 from '../../../assets/images/preview2.jpg';
-import img_03 from '../../../assets/images/preview3.jpg';
-import img_04 from '../../../assets/images/preview4.jpg';
-import img_05 from '../../../assets/images/preview5.jpg';
-import img_06 from '../../../assets/images/preview6.jpg';
+import img_01 from '../../../assets/images/preview1.webp';
+import img_02 from '../../../assets/images/preview2.webp';
+import img_03 from '../../../assets/images/preview3.webp';
+import img_04 from '../../../assets/images/preview4.webp';
+import img_05 from '../../../assets/images/preview5.webp';
+import img_06 from '../../../assets/images/preview6.webp';
 import img_07 from '../../../assets/images/preview7.webp';
-import img_08 from '../../../assets/images/preview8.jpg';
+import img_08 from '../../../assets/images/preview8.webp';
 
 export const videos = [
   {

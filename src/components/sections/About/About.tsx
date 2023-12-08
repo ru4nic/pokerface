@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
 import PhotoCarousel from './PhotoCarousel';
-import aboutBkndImg from '../../../assets/images/about_bknd2.jpg';
+import aboutBkndImg from '../../../assets/images/about_bknd2.webp';
 import {
   Container,
   Title,

@@ -1,4 +1,4 @@
-import avatar from '../../../assets/images/avatar.jpg';
+import avatar from '../../../assets/images/avatar.webp';
 import TiltParalax from '../../UI/TiltParalax';
 import Button from '@mui/material/Button';
 import PhoneIcon from '@mui/icons-material/Phone';

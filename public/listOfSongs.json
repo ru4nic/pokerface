@@ -285,7 +285,7 @@
     "author": "Filatov & Karas",
     "song": "Лирика (Сектор Газа)",
     "length": "4.23",
-    "src": "",
+    "src": "/example_tracks/lirika.mp3",
     "type": "Отечественные"
   },
   {
@@ -299,7 +299,7 @@
     "author": "Элджей, Feduk",
     "song": "Розовое вино",
     "length": "4.01",
-    "src": "",
+    "src": "/example_tracks/rozovoe_vino.mp3",
     "type": "Отечественные"
   },
   {
@@ -313,7 +313,7 @@
     "author": "Шура",
     "song": "Отшумели летние дожди",
     "length": "3.53",
-    "src": "",
+    "src": "/example_tracks/dozhdi.mp3",
     "type": "Отечественные"
   },
   {
@@ -355,7 +355,7 @@
     "author": "Depeche Mode",
     "song": "Personal Jesus",
     "length": "3.30",
-    "src": "",
+    "src": "/example_tracks/personal_jesus.mp3",
     "type": "Зарубежные"
   },
   {
@@ -481,7 +481,7 @@
     "author": "Modern Talking",
     "song": "You're My Heart",
     "length": "3.52",
-    "src": "",
+    "src": "/example_tracks/youre_my_heart.mp3",
     "type": "Зарубежные"
   },
   {
@@ -580,7 +580,7 @@
     "author": "Wham!",
     "song": "Last Christmas",
     "length": "4.37",
-    "src": "",
+    "src": "/example_tracks/last_christmas.mp3",
     "type": "Зарубежные"
   }
 ]

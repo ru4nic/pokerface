@@ -1,7 +1,7 @@
 import { useState, memo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../../store/store';
-import { clearCart } from '../../../slices/songSlicer';
+import { clearCart } from '../../../slices/songSlice';
 
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -13,7 +13,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
-import CartIcon from '../CartIcon';
+import CartMenu from './CartMenu';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { redTheme } from '../../base_styles/Vars';
@@ -103,7 +103,7 @@ const Popup = () => {
 
   return (
     <div>
-      <CartIcon
+      <CartMenu
         onClick={handleClickOpenDialog}
         totalMinutesOfCart={minutes}
         totalSecondsOfCart={seconds}
