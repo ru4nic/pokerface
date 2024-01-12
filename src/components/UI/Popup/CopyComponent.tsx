@@ -24,7 +24,7 @@ type CopyComponentProps = {
 };
 const CopyComponent = ({ minutes, seconds }: CopyComponentProps) => {
   const [openSnack, setOpenSnack] = useState(false);
-  const songsInCart = useSelector((state: RootState) => state.addSong.value);
+  const songsInCart = useSelector((state: RootState) => state.cart.value);
   const isMobile = useMediaQuery('(max-width: 450px)');
 
   const handleClickOpenSnack = () => {

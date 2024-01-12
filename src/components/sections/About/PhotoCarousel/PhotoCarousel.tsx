@@ -1,13 +1,8 @@
 import { useEffect, useRef } from 'react';
-import { useInView } from 'react-intersection-observer';
-//@ts-ignore
 
-import { Swiper as SwiperType } from 'swiper/types';
 import { register } from 'swiper/element';
 import { Navigation, Zoom, Pagination } from 'swiper/modules';
-import { motion } from 'framer-motion';
 import Box from '@mui/material/Box';
-import Skeleton from '@mui/material/Skeleton';
 import { SwiperOptions } from 'swiper/types';
 
 import ph_studio_red_1 from '../../../../assets/images/studio_red_3.webp';
@@ -24,9 +19,7 @@ import ph_IMG_3893 from '../../../../assets/images/bknd_head.webp';
 import ph_IMG_11 from '../../../../assets/images/IMG_11.webp';
 import ph_IMG_66 from '../../../../assets/images/IMG_66.webp';
 import ph_IMG_2261 from '../../../../assets/images/IMG_2261.webp';
-import img_skeleton from '../../../../assets/images/Skeleton.webp';
 
-import animation from '../../../settings/animation';
 import styled from 'styled-components';
 import { redTheme } from '../../../base_styles/Vars';
 
@@ -81,15 +74,20 @@ const StyledSwiperImage = styled.img`
 `;
 type MainSwiperProps = {
   children: React.ReactNode;
-  loop?: boolean;
 };
-const MainSwiper = ({ children, loop }: MainSwiperProps) => {
+const MainSwiper = ({ children }: MainSwiperProps) => {
   const swiperElRef = useRef(null);
 
   useEffect(() => {
     register();
     const params: SwiperOptions = {
       modules: [Navigation, Zoom, Pagination],
+      pagination: {
+        enabled: true,
+        clickable: true,
+      },
+      navigation: true,
+      zoom: true,
       injectStyles: [
         `.swiper-button-next,
           .swiper-button-prev {
@@ -101,8 +99,6 @@ const MainSwiper = ({ children, loop }: MainSwiperProps) => {
           @media (max-width: 750px){
             .swiper-button-next,
           .swiper-button-prev{
-
-            
             --swiper-navigation-size: 1.8em;
             }
           }
@@ -122,67 +118,37 @@ const MainSwiper = ({ children, loop }: MainSwiperProps) => {
   }, []);
   return (
     <MainSwiperContainer title="Кликните два раза на фото чтобы увеличить">
-      <swiper-container
-        init={false}
-        ref={swiperElRef}
-        navigation={true}
-        pagination={true}
-        zoom={true}
-        loop={loop}
-      >
+      <swiper-container init={false} ref={swiperElRef}>
         {children}
       </swiper-container>
     </MainSwiperContainer>
   );
 };
 const PhotoCarousel = () => {
-  const { ref, inView } = useInView({
-    root: null,
-
-    threshold: 0.2,
-    triggerOnce: true,
-  });
   return (
-    <motion.div {...animation} transition={{ duration: 0.5, delay: 0.5 }}>
-      <Box
-        ref={ref}
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          padding: '5em 0 0 0',
-        }}
-      >
-        {inView ? (
-          <MainSwiper loop={true}>
-            {images.map((image, index) => {
-              return (
-                <swiper-slide key={index}>
-                  <SliderWrapper>
-                    <div className="swiper-zoom-container">
-                      <StyledSwiperImage src={image} />
-                    </div>
-                  </SliderWrapper>
-                </swiper-slide>
-              );
-            })}
-          </MainSwiper>
-        ) : (
-          <MainSwiper loop={false}>
-            <Skeleton variant="rounded" sx={{ bgcolor: 'grey.900' }}>
-              <swiper-slide>
-                <SliderWrapper>
-                  {/* <div className="swiper-zoom-container"> */}
-                  <StyledSwiperImage src={img_skeleton} />
-                  {/* </div> */}
-                </SliderWrapper>
-              </swiper-slide>
-            </Skeleton>
-          </MainSwiper>
-        )}
-      </Box>
-    </motion.div>
+    <Box
+      sx={{
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        padding: '5em 0 0 0',
+      }}
+    >
+      <MainSwiper>
+        {images.map((image, index) => {
+          return (
+            <swiper-slide key={index} lazy={true}>
+              <SliderWrapper>
+                <div className="swiper-zoom-container">
+                  <StyledSwiperImage src={image} loading="lazy" />
+                </div>
+              </SliderWrapper>
+            </swiper-slide>
+          );
+        })}
+      </MainSwiper>
+    </Box>
   );
 };
 export default PhotoCarousel;

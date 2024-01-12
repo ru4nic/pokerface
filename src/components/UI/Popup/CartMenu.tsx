@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 // import { styled } from '@mui/material/styles';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearCart } from '../../../slices/songSlice';
+import { clearCart } from '../../../slices/cartSlice';
 import IconButton from '@mui/material/IconButton';
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
@@ -25,7 +25,7 @@ import {
 // }));
 const CartInfoFixed = styled.section`
   position: fixed;
-  right: 5rem;
+  right: 2.3%;
   top: calc(${heightOfNavBarDesktop} + 1rem);
   background-color: #ffffffaa;
   backdrop-filter: blur(10px);
@@ -81,7 +81,7 @@ export default function CartMenu({
   totalMinutesOfCart,
   totalSecondsOfCart,
 }: CartMenuProps) {
-  const count = useSelector((state: RootState) => state.addSong.value);
+  const count = useSelector((state: RootState) => state.cart.value);
   const dispatch = useDispatch();
 
   return (

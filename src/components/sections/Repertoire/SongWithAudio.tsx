@@ -10,7 +10,7 @@ import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import PauseCircleIcon from '@mui/icons-material/PauseCircle';
 import IconButton from '@mui/material/IconButton';
 
-import { PlayButton } from './Song';
+import { PlayButton } from './SongItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
 import { setPlaying } from '../../../slices/audioSlice';
@@ -33,9 +33,7 @@ const SongWithAudio = ({ src, srcSong, setSrcSong, song }: SongWithAudio) => {
     (state: RootState) => state.setPlaying.isPaused
   );
   const checked = useSelector((state: RootState) => {
-    const songChecked = state.addSong.value.find(
-      (track) => track.song === song
-    );
+    const songChecked = state.cart.value.find((track) => track.song === song);
     return songChecked?.checked;
   }); //checked - выделение цветом в списке песен (в аккордеоне).)
 

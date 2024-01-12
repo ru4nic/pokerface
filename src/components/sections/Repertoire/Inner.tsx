@@ -1,77 +1,64 @@
-import { useEffect, useState, memo } from 'react';
+import { useState, memo, useEffect } from 'react';
 
+import styled from 'styled-components';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchSongs, selectSongsError } from '../../../slices/songsSlice';
+import { ThunkDispatch } from '@reduxjs/toolkit';
+import { AnyAction } from '@reduxjs/toolkit';
+import { RootState } from '../../../store/store';
 // import { PDFDownloadLink } from '@react-pdf/renderer';
 // import PdfSongsRender from '../UI/PdfSongsRender';
 
 import Popup from '../../UI/Popup';
 
-import SongsAccordion from './SongsAccordion';
+import SongList from './SongList';
 
 import AudioPlayerFixed from '../../UI/AudioPlayerFixed';
+import FilterForm from './FilterForm';
 
-type TypeSong = {
-  type: 'Отечественные' | 'Зарубежные';
-};
-export interface Songs {
-  author: string;
-  song: string;
-  length: string;
-  src: string;
-  type: TypeSong;
-}
+const Wrapper = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+`;
+const Title = styled.h3`
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  font-size: 1.4rem;
+  font-family: RobotoRegular;
+  font-weight: normal;
+`;
 const Inner = () => {
+  const dispatch: ThunkDispatch<RootState, any, AnyAction> = useDispatch();
   //Получение данных из файла JSON
-  const [listOfSongs, setlistOfSongs] = useState([]);
+  const fetchError = useSelector(selectSongsError);
   //Показываем ошибку если не будет ответа от сервера
-  const [error, setError] = useState<string | null>(null);
-  //Получение ссылки на текущ. песню в плеере
   const [srcSong, setSrcSong] = useState<null | string>(null);
-  //Медиазапрос для MUI
-
-  //----------------------------------------------------------------------------//
-
-  const linkJson = './listOfSongs.json';
-  // const linkJson = 'https://pokerfaceband.ru/listOfSongs.json';
-  const ruSongs: Songs[] = listOfSongs.filter(
-    (song: TypeSong) => song.type === 'Отечественные'
-  );
-  const engSongs: Songs[] = listOfSongs.filter(
-    (song: TypeSong) => song.type === 'Зарубежные'
-  );
+  //Получение ссылки на текущ. песню в плеере
 
   useEffect(() => {
-    async function fetchData() {
-      //Отправляем запрос и получаем данные о песнях из JSON файла
-      try {
-        const resSongs = await fetch(linkJson);
-        const fetchSongs = await resSongs.json();
-        setlistOfSongs(fetchSongs);
-      } catch (error: any) {
-        setError(error.message);
-      }
-    }
-    fetchData();
-  }, []);
-  if (error) {
-    return (
-      <h3>
-        Ошибка загрузки песен: {error} Сервер не отвечает или проверьте
-        подключение к интернету.
-      </h3>
-    );
-  }
+    dispatch(fetchSongs());
+  }, [dispatch]);
 
   return (
     <>
       <Popup />
-      <SongsAccordion
-        lang="Отечественные"
-        {...{ ruSongs, srcSong, setSrcSong }}
-      />
-      <SongsAccordion
-        lang="Зарубежные"
-        {...{ engSongs, srcSong, setSrcSong }}
-      />
+      {fetchError ? (
+        <div style={{ textAlign: 'center' }}>
+          Ошибка загрузки песен. Проверьте подключение к интернету {fetchError}
+        </div>
+      ) : (
+        <Wrapper>
+          <FilterForm />
+          <Title>Репертуар</Title>
+          {/* <SongList lang="Отечественные" {...{ srcSong, setSrcSong }} />
+          <SongList lang="Зарубежные" {...{ srcSong, setSrcSong }} /> */}
+          <SongList srcSong={srcSong} setSrcSong={setSrcSong} />
+        </Wrapper>
+      )}
+
       {/* Аудиоплеер покажется на странице если пользователь кликнул послушать любую песню. */}
 
       {srcSong !== null && (
@@ -87,8 +74,6 @@ const Inner = () => {
 
       {/* </PDFDownloadLink> */}
       {/* <PdfSongsRender ruSongs={ruSongs} engSongs={engSongs} /> */}
-      {/* <TiltParalax> */}
-      {/* </TiltParalax> */}
     </>
   );
 };

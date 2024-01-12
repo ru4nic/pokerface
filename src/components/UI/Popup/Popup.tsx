@@ -1,7 +1,7 @@
 import { useState, memo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../../store/store';
-import { clearCart } from '../../../slices/songSlice';
+import { clearCart } from '../../../slices/cartSlice';
 
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -73,7 +73,7 @@ declare module '@mui/material/IconButton' {
 const Popup = () => {
   const [open, setOpen] = useState(false);
 
-  const songsInCart = useSelector((state: RootState) => state.addSong.value);
+  const songsInCart = useSelector((state: RootState) => state.cart.value);
   const dispatch = useDispatch();
 
   const handleClickOpenDialog = () => {

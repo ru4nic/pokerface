@@ -1,11 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit';
-import cartSongReducer from '../slices/songSlice';
-import audioSlice from '../slices/audioSlice';
-
+import cartReducer from '../slices/cartSlice';
+import audioReducer from '../slices/audioSlice';
+import songsReducer from '../slices/songsSlice';
+import filterReducer from '../slices/filterSlice';
 export const store = configureStore({
   reducer: {
-    addSong: cartSongReducer,
-    setPlaying: audioSlice,
+    cart: cartReducer,
+    setPlaying: audioReducer,
+    songs: songsReducer,
+    filter: filterReducer,
   },
 });
 

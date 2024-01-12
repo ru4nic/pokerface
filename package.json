@@ -16,8 +16,8 @@
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "@reduxjs/toolkit": "^1.9.7",
+    "autosuggest-highlight": "^3.3.4",
     "framer-motion": "^10.16.4",
-    "googleapis": "^128.0.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
@@ -31,6 +31,7 @@
     "swiper": "^11.0.3"
   },
   "devDependencies": {
+    "@types/autosuggest-highlight": "^3.2.3",
     "@types/react": "^18.2.15",
     "@types/react-copy-to-clipboard": "^5.0.6",
     "@types/react-dom": "^18.2.7",

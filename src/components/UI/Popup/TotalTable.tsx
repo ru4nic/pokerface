@@ -38,7 +38,7 @@ type TotalTableProps = {
   seconds: number;
 };
 const TotalTable = ({ minutes, seconds }: TotalTableProps) => {
-  const songsInCart = useSelector((state: RootState) => state.addSong.value);
+  const songsInCart = useSelector((state: RootState) => state.cart.value);
   return (
     <Total>
       <TitleSum>Итого:</TitleSum>

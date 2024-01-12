@@ -6,11 +6,11 @@ import { useDispatch } from 'react-redux';
 import {
   // toggleSongChecked,
   Song as typeSong,
-} from '../../../slices/songSlice';
+} from '../../../slices/cartSlice';
 
 import Inner from './Inner';
 import { Section, Title, Container, Paragraph } from '../../base_styles/styles';
-import { addSong, clearCart } from '../../../slices/songSlice';
+import { addSong, clearCart } from '../../../slices/cartSlice';
 import { ImFilePdf } from 'react-icons/im';
 import { StyledButton } from '../../UI/Button/StyledButton';
 import { buttons } from './data';
@@ -53,7 +53,8 @@ const Repertoire = () => {
         <div ref={ref}></div>
         <Title>Заказчикам</Title>
         <Paragraph $dark $forClients>
-          Соберите сет-лист на своё мероприятие и отправьте его нам!
+          Соберите сет-лист из репертуара группы на своё мероприятие и отправьте
+          его нам!
         </Paragraph>
         {inView && <Inner />}
         <WrapperButtons>

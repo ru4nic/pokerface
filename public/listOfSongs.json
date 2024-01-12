@@ -1,586 +1,833 @@
 [
   {
     "author": "Антонов Юрий",
-    "song": "Летящей Походкой",
+    "title": "Летящей Походкой",
     "length": "4.41",
     "src": "/example_tracks/Antonov.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Агата Кристи",
-    "song": "Как На Войне",
+    "title": "Как На Войне",
     "length": "4.04",
-    "src": "",
-    "type": "Отечественные"
+    "src": "/example_tracks/agata_.mp3",
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Ария",
-    "song": "Потеряный Рай",
+    "title": "Потеряный Рай",
     "length": "5.26",
     "src": "/example_tracks/poteryanyi_rai.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Artik & Asti",
-    "song": "Девочка Танцуй",
+    "title": "Девочка Танцуй",
     "length": "4.20",
     "src": "/example_tracks/Artik.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Барских Макс",
-    "song": "Подруга ночь",
+    "title": "Подруга ночь",
     "length": "3.28",
-    "src": "",
-    "type": "Отечественные"
+    "src": "/example_tracks/podruga_no4.mp3",
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Би-2",
-    "song": "Полковнику никто не пишет",
+    "title": "Полковнику никто не пишет",
     "length": "4.24",
     "src": "/example_tracks/polkovnik.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Билан Дима",
-    "song": "Держи",
+    "title": "Держи",
     "length": "3.44",
     "src": "/example_tracks/derzhi.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Gayazov$ Brother$",
-    "song": "Малиновая Лада",
+    "title": "Малиновая Лада",
     "length": "3.39",
     "src": "/example_tracks/lada.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Губин Андрей",
-    "song": "Девушки как звёзды",
+    "title": "Девушки как звёзды",
     "length": "4.05",
     "src": "/example_tracks/gubin.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Губин Андрей",
-    "song": "Ночь",
+    "title": "Ночь",
     "length": "3.41",
     "src": "/example_tracks/no4.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Губин Андрей",
-    "song": "Зима-холода",
+    "title": "Зима-холода",
     "length": "3.52",
-    "src": "",
-    "type": "Отечественные"
+    "src": "/example_tracks/zima_holoda.mp3",
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Dabro",
-    "song": "Юность",
+    "title": "Юность",
     "length": "3.43",
     "src": "/example_tracks/unost.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Дискотека Авария",
-    "song": "Новогодняя",
+    "title": "Новогодняя",
     "length": "4.51",
-    "src": "",
-    "type": "Отечественные"
+    "src": "/example_tracks/avaria.mp3",
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": "Новогодняя"
   },
   {
     "author": "Дорн Иван",
-    "song": "Стыцамэн",
+    "title": "Стыцамэн",
     "length": "4.09",
     "src": "/example_tracks/stycaman.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Жуки",
-    "song": "Батарейка",
+    "title": "Батарейка",
     "length": "3.46",
     "src": "/example_tracks/batareika.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Звери",
-    "song": "Районы кварталы",
+    "title": "Районы кварталы",
     "length": "3.24",
     "src": "/example_tracks/Rayony.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Zivert",
-    "song": "Beverly Hills",
+    "title": "Beverly Hills",
     "length": "3.41",
     "src": "/example_tracks/zivert.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Zdob Si Zdub",
-    "song": "Видели ночь",
+    "title": "Видели ночь",
     "length": "4.39",
     "src": "/example_tracks/videliNo4.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
 
   {
     "author": "Иванушки International",
-    "song": "Тополиный Пух",
+    "title": "Тополиный Пух",
     "length": "3.36",
     "src": "/example_tracks/ivanushki.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Кино",
-    "song": "Перемен",
+    "title": "Перемен",
     "length": "4.53",
     "src": "/example_tracks/peremen.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Король и Шут",
-    "song": "Лесник",
+    "title": "Лесник",
     "length": "3.02",
     "src": "/example_tracks/lesnik.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Леприконсы",
-    "song": "Хали Гали Паратрупер",
+    "title": "Хали Гали Паратрупер",
     "length": "4.01",
     "src": "/example_tracks/haligali.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Лепс Григорий",
-    "song": "Самый лучший день",
+    "title": "Самый лучший день",
     "length": "4.01",
     "src": "/example_tracks/leps.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "LOBODA",
-    "song": "К черту любовь",
+    "title": "К черту любовь",
     "length": "3.38",
     "src": "",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Люся Чеботина",
-    "song": "Солнце Монако",
+    "title": "Солнце Монако",
     "length": "2.37",
     "src": "/example_tracks/monako.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Ляпис Трубецкой",
-    "song": "Ау",
+    "title": "Ау",
     "length": "3.52",
     "src": "/example_tracks/Au.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Меладзе",
-    "song": "Притяженья больше нет",
+    "title": "Притяженья больше нет",
     "length": "4.05",
     "src": "/example_tracks/meladze.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Мираж",
-    "song": "Музыка Нас Связала",
+    "title": "Музыка Нас Связала",
     "length": "4.28",
     "src": "/example_tracks/miraj.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "MONATIK",
-    "song": "УВЛИУВТ",
+    "title": "УВЛИУВТ",
     "length": "4.04",
     "src": "/example_tracks/Monatika.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Мумий Тролль",
-    "song": "Владивосток 2000",
+    "title": "Владивосток 2000",
     "length": "2.42",
     "src": "/example_tracks/Vladivostok2000.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Николаев Игорь",
-    "song": "Выпьем За Любовь",
+    "title": "Выпьем За Любовь",
     "length": "4.07",
     "src": "",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Отпетые Мошенники",
-    "song": "Люби меня люби",
+    "title": "Люби меня люби",
     "length": "4.05",
     "src": "/example_tracks/lubiMenyaLubi.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Отпетые Мошенники",
-    "song": "Девушки",
+    "title": "Девушки",
     "length": "3.57",
     "src": "/example_tracks/devushkiRaznye.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Сектор Газа",
-    "song": "Пора домой",
+    "title": "Пора домой",
     "length": "3.57",
     "src": "",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
-    "author": "Сектор газа",
-    "song": "30 лет",
+    "author": "Сектор Газа",
+    "title": "30 лет",
     "length": "4.10",
     "src": "/example_tracks/30let.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Пирожков Артур",
-    "song": "Зацепила",
+    "title": "Зацепила",
     "length": "3.26",
     "src": "/example_tracks/zacepila.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "RASA",
-    "song": "Пчеловод",
+    "title": "Пчеловод",
     "length": "2.51",
     "src": "",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Руки Вверх!",
-    "song": "Он тебя целует",
+    "title": "Он тебя целует",
     "length": "4.04",
     "src": "",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Руки Вверх!",
-    "song": "18 мне уже",
+    "title": "18 мне уже",
     "length": "4.08",
     "src": "/example_tracks/18mne.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Руки Вверх!",
-    "song": "Ай яй яй",
+    "title": "Ай яй яй",
     "length": "3.49",
     "src": "/example_tracks/AiDev4onka.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
-
   {
     "author": "Filatov & Karas",
-    "song": "Лирика (Сектор Газа)",
+    "title": "Лирика (Сектор Газа)",
     "length": "4.23",
     "src": "/example_tracks/lirika.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Hi-Fi",
-    "song": "Седьмой лепесток",
+    "title": "Седьмой лепесток",
     "length": "3.13",
     "src": "/example_tracks/lepestok.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Элджей, Feduk",
-    "song": "Розовое вино",
+    "title": "Розовое вино",
     "length": "4.01",
     "src": "/example_tracks/rozovoe_vino.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Ю. Шатунов",
-    "song": "Седая Ночь",
+    "title": "Седая Ночь",
     "length": "5.12",
     "src": "/example_tracks/sedaya_no4.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Шура",
-    "song": "Отшумели летние дожди",
+    "title": "Отшумели летние дожди",
     "length": "3.53",
     "src": "/example_tracks/dozhdi.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Шура",
-    "song": "Ты не верь слезам",
+    "title": "Ты не верь слезам",
     "length": "3.16",
     "src": "/example_tracks/shura.mp3",
-    "type": "Отечественные"
+    "type": "Отечественные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Backstreet Boys",
-    "song": "Everybody",
+    "title": "Everybody",
     "length": "4.11",
     "src": "/example_tracks/everybody1.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Bon Jovi",
-    "song": "Always",
+    "title": "Always",
     "length": "5.56",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Bon Jovi",
-    "song": "It's My Life",
+    "title": "It's My Life",
     "length": "3.49",
     "src": "/example_tracks/itsMyLife.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Coldplay",
-    "song": "Adventure of a Lifetime",
+    "title": "Adventure of a Lifetime",
     "length": "4.26",
     "src": "/example_tracks/adventure.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Depeche Mode",
-    "song": "Personal Jesus",
+    "title": "Personal Jesus",
     "length": "3.30",
     "src": "/example_tracks/personal_jesus.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Duran Duran",
-    "song": "Ordinary World",
+    "title": "Ordinary World",
     "length": "5.48",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Eagles",
-    "song": "Hotel California",
+    "title": "Hotel California",
     "length": "6.42",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Eiffel 65",
-    "song": "Blue (Da Ba Dee)",
+    "title": "Blue (Da Ba Dee)",
     "length": "4.43",
     "src": "/example_tracks/blue.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Europe",
-    "song": "The Final Countdown",
+    "title": "The Final Countdown",
     "length": "4.23",
     "src": "/example_tracks/finalCountdown.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Genesis",
-    "song": "I Can't Dance",
+    "title": "I Can't Dance",
     "length": "3.56",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Gorky Park",
-    "song": "Moscow Calling",
+    "title": "Moscow Calling",
     "length": "5.00",
     "src": "/example_tracks/moscowCalling.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Haddaway",
-    "song": "What Is Love",
+    "title": "What Is Love",
     "length": "4.29",
     "src": "/example_tracks/whatIsLove.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Imany",
-    "song": "Don't Be So Shy (Filatov & Karas Rmx)",
+    "title": "Don't Be So Shy (Filatov & Karas Rmx)",
     "length": "3.14",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Justin Timberlake",
-    "song": "Can't Stop the feeling!",
+    "title": "Can't Stop the feeling!",
     "length": "4.00",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Lady Gaga",
-    "song": "Poker Face",
+    "title": "Poker Face",
     "length": "3.57",
     "src": "/example_tracks/pokerface.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Linkin Park",
-    "song": "In the End",
+    "title": "In the End",
     "length": "3.13",
     "src": "/example_tracks/inTheEnd.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Mark Ronson feat. Bruno Mars",
-    "song": "Uptown Funk",
+    "title": "Uptown Funk",
     "length": "3.31",
     "src": "/example_tracks/uptownFunk.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Maroon 5",
-    "song": "This Love",
+    "title": "This Love",
     "length": "3.26",
     "src": "/example_tracks/thisLove.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Maroon 5",
-    "song": "Moves Like Jagger",
+    "title": "Moves Like Jagger",
     "length": "3.26",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "MARUV",
-    "song": "Drunk Groove",
+    "title": "Drunk Groove",
     "length": "3.53",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Michael Jackson",
-    "song": "Smooth Criminal",
+    "title": "Smooth Criminal",
     "length": "4.28",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Michel Telo",
-    "song": "Nosa",
+    "title": "Nosa",
     "length": "2.47",
     "src": "/example_tracks/nosa.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Modern Talking",
-    "song": "You're My Heart",
+    "title": "You're My Heart",
     "length": "3.52",
     "src": "/example_tracks/youre_my_heart.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Nickelback",
-    "song": "Far Away",
+    "title": "Far Away",
     "length": "4.00",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Nickelback",
-    "song": "How You Remind Me",
+    "title": "How You Remind Me",
     "length": "3.43",
     "src": "/example_tracks/remindMe.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "The Offspring",
-    "song": "The kids aren't allright",
+    "title": "The kids aren't allright",
     "length": "3.05",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "O-Zone",
-    "song": "Dragostea Din Tei",
+    "title": "Dragostea Din Tei",
     "length": "3.37",
     "src": "/example_tracks/dragonsteadintei.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Disco",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Papa Roach",
-    "song": "Last Resort",
+    "title": "Last Resort",
     "length": "3.26",
     "src": "/example_tracks/lastResort.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
-
   {
     "author": "The Rasmus",
-    "song": "In the Shadows",
+    "title": "In the Shadows",
     "length": "4.00",
     "src": "/example_tracks/Rasmus.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Ricky Martin",
-    "song": "Livin' la Vida Loca",
+    "title": "Livin' la Vida Loca",
     "length": "4.05",
     "src": "/example_tracks/vidaLoca.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Roxette",
-    "song": "Sleeping In My Car",
+    "title": "Sleeping In My Car",
     "length": "3.50",
     "src": "/example_tracks/sleepingInMyCar.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": ""
   },
   {
     "author": "Savage Garden",
-    "song": "To the Moon & Back",
+    "title": "To the Moon & Back",
     "length": "4.57",
     "src": "/example_tracks/toTheMoonAndBack.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Scorpions",
-    "song": "Wind Of Change",
+    "title": "Wind Of Change",
     "length": "5.11",
     "src": "/example_tracks/windOfChange.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": true,
+    "category": "Медляк"
   },
   {
     "author": "SNAP!",
-    "song": "Rhythm Is A Dancer",
+    "title": "Rhythm Is A Dancer",
     "length": "3.42",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Disco",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Tears For Fears",
-    "song": "Shout",
+    "title": "Shout",
     "length": "6.16",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
   },
   {
     "author": "Timbaland feat. OneRepublic",
-    "song": "Apologize",
+    "title": "Apologize",
     "length": "3.09",
     "src": "",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": "Медляк"
   },
   {
     "author": "Wham!",
-    "song": "Last Christmas",
+    "title": "Last Christmas",
     "length": "4.37",
     "src": "/example_tracks/last_christmas.mp3",
-    "type": "Зарубежные"
+    "type": "Зарубежные",
+    "genre": "Pop",
+    "rating_top": false,
+    "category": "Новогодняя"
   }
 ]

@@ -1,11 +1,15 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../../store/store';
 import styled from 'styled-components';
-import { Song as typeSong } from '../../../slices/songSlice';
-import { removeSong } from '../../../slices/songSlice';
+import { Song as typeSong } from '../../../slices/cartSlice';
+import { removeSong } from '../../../slices/cartSlice';
 import DeleteForeverRoundedIcon from '@mui/icons-material/DeleteForeverRounded';
-import { Author } from '../../sections/Repertoire/Song';
-import { PlayButton, SongName, Length } from '../../sections/Repertoire/Song';
+import { Author } from '../../sections/Repertoire/SongItem';
+import {
+  PlayButton,
+  SongName,
+  Length,
+} from '../../sections/Repertoire/SongItem';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 import { redTheme } from '../../base_styles/Vars';
@@ -36,7 +40,7 @@ type PopupSongListProps = {
   handleCloseDialog: () => void;
 };
 const PopupSongList = ({ handleCloseDialog }: PopupSongListProps) => {
-  const songsInCart = useSelector((state: RootState) => state.addSong.value);
+  const songsInCart = useSelector((state: RootState) => state.cart.value);
   const dispatch = useDispatch();
   const deleteSongHandler = (song: typeSong) => {
     // Удаляем песню из корзины по клику на кнопку "удалить" напротив каждой песни
