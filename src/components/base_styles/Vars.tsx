@@ -17,6 +17,6 @@ export const songColor = 'rgb(241, 122, 136)';
 export const darkGrey = '#2B2530';
 export const greyText = '#2B2530';
 //Repertoire
-export const redPlay = '#8e3232';
+export const redPlay = '#00000012';
 //Footer
 export const colorLink = '#ddd';

@@ -157,7 +157,9 @@ export const NavBar = styled.div<{ $inView?: boolean }>`
   }
 `;
 export const IconWrapp = styled.div`
-  background-color: ${bkrndNavBar}92;
+  background-color: #ffffffab;
   border-radius: 0.25em;
   box-shadow: 0 1px 3px #00000080;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 `;

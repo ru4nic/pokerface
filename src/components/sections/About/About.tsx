@@ -1,6 +1,8 @@
+import { lazy, Suspense } from 'react';
 import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
-import PhotoCarousel from './PhotoCarousel';
+// import PhotoCarousel from './PhotoCarousel';
+const PhotoCarousel = lazy(() => import('./PhotoCarousel'));
 import aboutBkndImg from '../../../assets/images/about_bknd2.webp';
 import {
   Container,
@@ -86,7 +88,9 @@ function About() {
           коллектива включены лучшие песни из дискотеки 80-х, 90-х, зарубежного
           и отечественного рока, современных поп-хитов и не только.
         </Paragraph>
-        <PhotoCarousel />
+        <Suspense fallback={<div>Загрузка...</div>}>
+          <PhotoCarousel />
+        </Suspense>
       </Container>
     </AboutSection>
   );

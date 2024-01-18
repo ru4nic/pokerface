@@ -1,3 +1,4 @@
+import { useState, useEffect, lazy } from 'react';
 import { useInView } from 'react-intersection-observer';
 //MUI
 import GlobalStyles from './GlobalStyles';
@@ -6,14 +7,22 @@ import { Provider } from 'react-redux';
 import CssBaseline from '@mui/material/CssBaseline';
 import { lightGreen } from '@mui/material/colors';
 //My Components
+import PageLoad from './components/UI/PageLoad';
 import Intro from './components/sections/Intro';
-import Navbar from './components/sections/Navbar';
-import About from './components/sections/About';
-import Video from './components/sections/Video';
-import Features from './components/sections/Features';
-import Repertoire from './components/sections/Repertoire';
-import Contacts from './components/sections/Contacts';
-import Footer from './components/sections/Footer';
+// import Navbar from './components/sections/Navbar';
+const Navbar = lazy(() => import('./components/sections/Navbar'));
+// import About from './components/sections/About';
+// import Video from './components/sections/Video';
+// import Features from './components/sections/Features';
+// import Repertoire from './components/sections/Repertoire';
+// import Contacts from './components/sections/Contacts';
+// import Footer from './components/sections/Footer';
+const About = lazy(() => import('./components/sections/About'));
+const Video = lazy(() => import('./components/sections/Video'));
+const Features = lazy(() => import('./components/sections/Features'));
+const Repertoire = lazy(() => import('./components/sections/Repertoire'));
+const Contacts = lazy(() => import('./components/sections/Contacts'));
+const Footer = lazy(() => import('./components/sections/Footer'));
 
 import lightWoff2 from './assets/fonts/IBM_Plex_Sans/ibm-plex-sans-v19-cyrillic_latin-300.woff2';
 
@@ -68,7 +77,7 @@ let theme = createTheme({
         src: local('IbmLight'), url(${lightWoff2}) format('woff2');
       }
       body {
-        background-color: ${darkGrey};
+        background-color: ${whiteText};
       }
     `,
     },
@@ -122,7 +131,7 @@ theme = createTheme(theme, {
     }),
     cleanCart: theme.palette.augmentColor({
       color: {
-        main: '#a7a6a4',
+        main: '#7b7a79',
       },
       name: 'cleanCart',
     }),
@@ -141,23 +150,36 @@ function App() {
     threshold: 0,
   });
 
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsPageLoaded(true);
+  }, []); // Пустой массив зависимостей означает, что useEffect сработает только при монтировании
+
   return (
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <GlobalStyles />
-        <Navbar inView={inView} />
-        <div className="wrapper">
-          <div ref={ref}>
-            <Intro />
-          </div>
-          <About />
-          <Video />
-          <Features />
-          <Repertoire />
-          <Contacts />
-          <Footer />
-        </div>
+
+        {isPageLoaded ? (
+          <>
+            <Navbar inView={inView} />
+            <div className="wrapper">
+              <div ref={ref}>
+                <Intro />
+              </div>
+              <About />
+              <Video />
+              <Features />
+              <Repertoire />
+              <Contacts />
+              <Footer />
+            </div>
+          </>
+        ) : (
+          <PageLoad />
+        )}
       </ThemeProvider>
     </Provider>
   );

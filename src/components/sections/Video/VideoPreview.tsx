@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import icon from '../../../assets/images/icons/icons8-youtube-play.svg';
-import { whiteText } from '../../base_styles/Vars';
+import { darkGrey } from '../../base_styles/Vars';
 
 const IconPlay = styled.div`
   width: 25%;
@@ -17,7 +17,7 @@ const IconPlay = styled.div`
 `;
 const ItemDesc = styled.div<{ $desc?: string }>`
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.882);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   bottom: 0;
@@ -31,8 +31,9 @@ const ItemDesc = styled.div<{ $desc?: string }>`
   height: fit-content;
   font-size: 1rem;
   padding: 0.5rem;
-  color: ${whiteText};
+  /* color: ${darkGrey}; */
   display: ${(props) => (props.$desc ? '' : 'none')};
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
   @media (max-height: 820px) and (orientation: landscape) {
     font-size: 0.9rem;
   }
@@ -64,6 +65,10 @@ const VideoItem = styled.div<{ $src: string }>`
       width: 35%;
       height: 35%;
       opacity: 1;
+    }
+    ${ItemDesc} {
+      background-color: transparent;
+      color: white;
     }
   }
 

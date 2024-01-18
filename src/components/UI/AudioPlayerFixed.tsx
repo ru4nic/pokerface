@@ -28,8 +28,8 @@ const AudioPlayerContainer = styled.div`
   width: 60%;
   .rhap_container {
     background-color: #ffffffbb;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 7px 7px 0 0;
   }
   .rhap_main-controls {
@@ -81,7 +81,7 @@ const AudioPlayerContainer = styled.div`
 
 const AudioPlayerCloseButton = styled.div`
   align-self: flex-end;
-  margin-bottom: 0.2rem;
+  /* margin-bottom: 0.2rem; */
 `;
 
 type AudioPlayerFixedProps = {
@@ -113,8 +113,8 @@ const AudioPlayerFixed = ({ setSrcSong, srcSong }: AudioPlayerFixedProps) => {
         <AudioPlayerCloseButton>
           <IconButton onClick={handleCloseAudioPlayer}>
             <CloseOutlinedIcon
-              color="warning"
-              fontSize={tabletsAndMobiles ? 'large' : 'medium'}
+              color="inherit"
+              fontSize={tabletsAndMobiles ? 'medium' : 'medium'}
               data-test="close-audioplayer"
             />
           </IconButton>

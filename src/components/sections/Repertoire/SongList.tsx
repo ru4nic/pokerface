@@ -43,23 +43,21 @@ const ScrollContainer = styled.ul<{ $filteredSongsLength: number }>`
   border: 1px solid #00000020;
   border-right: none;
   border-bottom: ${(props) => props.$filteredSongsLength === 0 && 'none'};
-  /* border-radius: 6px 0 0 6px; */
-  border-left: none;
+  border-left: 1px solid #00000020;
   @media (max-width: 1076px) {
-    border-left: 0;
-    border-radius: 0;
     max-height: 49vmax;
+    border: 1px solid #00000020;
+    border-radius: 6px;
   }
 `;
 const ListWrapper = styled.div`
   width: 50%;
 
   &:last-child {
-    /* width: 49.7%; */
     ${ScrollContainer} {
-      /* border-radius: 0 6px 6px 0; */
+      border-left: none;
       @media (max-width: 1076px) {
-        border-radius: 0;
+        border: 1px solid #00000020;
       }
     }
   }

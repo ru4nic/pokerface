@@ -1,4 +1,4 @@
-import { useState, memo, useEffect } from 'react';
+import { useState, memo, useEffect, lazy } from 'react';
 
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,7 +14,8 @@ import Popup from '../../UI/Popup';
 import SongList from './SongList';
 
 import AudioPlayerFixed from '../../UI/AudioPlayerFixed';
-import FilterForm from './FilterForm';
+// import FilterForm from './FilterForm';
+const FilterForm = lazy(() => import('./FilterForm'));
 
 const Wrapper = styled.section`
   display: flex;

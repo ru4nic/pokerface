@@ -5,37 +5,41 @@ import { Navigation, Zoom, Pagination } from 'swiper/modules';
 import Box from '@mui/material/Box';
 import { SwiperOptions } from 'swiper/types';
 
-import ph_studio_red_1 from '../../../../assets/images/studio_red_3.webp';
+import img_dushes1 from '../../../../assets/images/dushes_1.webp';
+import img_dushes2 from '../../../../assets/images/dushes_2.webp';
+import img_studioRed1 from '../../../../assets/images/studio_red_3.webp';
 
-import ph_collage from '../../../../assets/images/collage.webp';
-import ph_4_210723 from '../../../../assets/images/IMG_4_210723.webp';
-import ph_22_210723 from '../../../../assets/images/IMG_22_210723.webp';
-import ph_45_210723 from '../../../../assets/images/IMG_45_210723.webp';
-import ph_26_210723 from '../../../../assets/images/IMG_26_210723.webp';
+import img_collage from '../../../../assets/images/collage.webp';
+import img_4_210723 from '../../../../assets/images/IMG_4_210723.webp';
+import img_22_210723 from '../../../../assets/images/IMG_22_210723.webp';
+import img_45_210723 from '../../../../assets/images/IMG_45_210723.webp';
+import img_26_210723 from '../../../../assets/images/IMG_26_210723.webp';
 
-import ph_IMG_3559 from '../../../../assets/images/IMG_3559.webp';
-import ph_IMG_3615 from '../../../../assets/images/IMG_3615.webp';
-import ph_IMG_3893 from '../../../../assets/images/bknd_head.webp';
-import ph_IMG_11 from '../../../../assets/images/IMG_11.webp';
-import ph_IMG_66 from '../../../../assets/images/IMG_66.webp';
-import ph_IMG_2261 from '../../../../assets/images/IMG_2261.webp';
+import img_3559 from '../../../../assets/images/IMG_3559.webp';
+import img_3615 from '../../../../assets/images/IMG_3615.webp';
+import img_3893 from '../../../../assets/images/bknd_head.webp';
+import img_11 from '../../../../assets/images/IMG_11.webp';
+import img_66 from '../../../../assets/images/IMG_66.webp';
+import img_2261 from '../../../../assets/images/IMG_2261.webp';
 
 import styled from 'styled-components';
 import { redTheme } from '../../../base_styles/Vars';
 
 const images = [
-  ph_collage,
-  ph_IMG_3893,
-  ph_IMG_3615,
-  ph_4_210723,
-  ph_22_210723,
-  ph_IMG_3559,
-  ph_26_210723,
-  ph_45_210723,
-  ph_IMG_66,
-  ph_IMG_2261,
-  ph_IMG_11,
-  ph_studio_red_1,
+  img_collage,
+  img_3893,
+  img_3615,
+  img_dushes1,
+  img_4_210723,
+  img_22_210723,
+  img_3559,
+  img_dushes2,
+  img_26_210723,
+  img_45_210723,
+  img_66,
+  img_2261,
+  img_11,
+  img_studioRed1,
 ];
 
 const MainSwiperContainer = styled.div`
@@ -46,7 +50,6 @@ const MainSwiperContainer = styled.div`
   --swiper-pagination-bullet-inactive-color: ${redTheme}90;
   --swiper-navigation-color: #fff;
   --swiper-pagination-bullet-size: 0.7em;
-
   @media (max-width: 736px) {
     width: 100%;
     margin: auto;
@@ -141,7 +144,11 @@ const PhotoCarousel = () => {
             <swiper-slide key={index} lazy={true}>
               <SliderWrapper>
                 <div className="swiper-zoom-container">
-                  <StyledSwiperImage src={image} loading="lazy" />
+                  <StyledSwiperImage
+                    src={image}
+                    loading="lazy"
+                    alt={`Pokerface кавер группа на свадьбу корпоратив ${index}`}
+                  />
                 </div>
               </SliderWrapper>
             </swiper-slide>

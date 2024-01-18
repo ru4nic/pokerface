@@ -5,7 +5,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { clearCart } from '../../../slices/cartSlice';
 import IconButton from '@mui/material/IconButton';
 import RemoveShoppingCartIcon from '@mui/icons-material/RemoveShoppingCart';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+// import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { IoIosOpen } from 'react-icons/io';
 import Slide from '@mui/material/Slide';
 import Tooltip from '@mui/material/Tooltip';
 import { RootState } from '../../../store/store';
@@ -15,6 +16,7 @@ import {
   greyText,
   heightOfNavBarDesktop,
   heightOfNavBarMobile,
+  bkrndNavBar,
 } from '../../base_styles/Vars';
 
 // const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -27,12 +29,14 @@ const CartInfoFixed = styled.section`
   position: fixed;
   right: 2.3%;
   top: calc(${heightOfNavBarDesktop} + 1rem);
+  /* background-color: ${bkrndNavBar}99; */
   background-color: #ffffffaa;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 1em;
   z-index: 1001;
   width: fit-content;
+  border: 1px solid #00000015;
   border-radius: 6px;
   box-shadow: 0 2px 4px #00000015;
   @media (max-width: 1076px) {
@@ -43,12 +47,15 @@ const CartInfoFixed = styled.section`
     display: flex;
     gap: 1em;
     align-items: center;
+    border-radius: 0 0 6px 0;
   }
 `;
 const TextCart = styled.p`
   color: ${greyText};
   margin: 0;
   font-size: 0.9em;
+  margin-bottom: 0.2rem;
+
   @media (max-width: 1076px) {
     margin: 0.2rem 0;
   }
@@ -103,7 +110,7 @@ export default function CartMenu({
             <IconButton
               size="medium"
               onClick={onClick}
-              color="openCart"
+              color="cleanCart"
               sx={{
                 border: '1px solid #00000015',
                 boxShadow: '0 2px 3px #00000025',
@@ -115,7 +122,8 @@ export default function CartMenu({
             overlap="rectangular"
             variant="standard"
           > */}
-              <ShoppingCartIcon />
+              {/* <ShoppingCartIcon /> */}
+              <IoIosOpen />
               {/* </Badge> */}
             </IconButton>
           </Tooltip>

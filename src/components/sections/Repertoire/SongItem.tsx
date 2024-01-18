@@ -39,9 +39,10 @@ const Item = styled.li<{ $checked?: boolean }>`
   text-decoration: initial;
   background-color: ${(props) => props.$checked && redPlay};
   transition: background-color 0.2s ease, color 0.5s ease;
-  color: ${(props) => (props.$checked ? checkedAuthor : darkGrey)};
-  border: 1px solid #00000025;
-
+  /* color: ${(props) => (props.$checked ? checkedAuthor : darkGrey)}; */
+  /* border: ${(props) =>
+    props.$checked ? '1px solid #00000025' : '1px solid transparent'}; */
+  border: 1px solid transparent;
   margin: 0.4rem 0.4rem;
   border-radius: 3px;
   text-overflow: ellipsis;
@@ -59,8 +60,15 @@ const Item = styled.li<{ $checked?: boolean }>`
     border-radius: 3px 3px 0 0;
   }
   &:hover {
-    background-color: ${(props) =>
-      props.$checked ? `${redPlay}cc` : '#00000010'};
+    /* background-color: ${(props) => (props.$checked ? '' : '#00000009')}; */
+    border: 1px solid #00000025;
+    box-shadow: 0 2px 3px #00000010;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:first-child {
+      border-top: none;
+    }
   }
 
   @media screen and (max-width: 625px) {
@@ -78,7 +86,8 @@ const Item = styled.li<{ $checked?: boolean }>`
 
 const Author = styled.div<{ $checked?: boolean }>`
   font-family: 'RobotoMedium';
-  color: ${(props) => (props.$checked ? checkedAuthor : darkGrey)};
+  /* color: ${(props) => (props.$checked ? checkedAuthor : darkGrey)}; */
+  /* color: inherit; */
   grid-area: author;
   text-overflow: ellipsis;
   transition: color 0.2s ease;
@@ -88,7 +97,7 @@ const Author = styled.div<{ $checked?: boolean }>`
 `;
 
 const SongName = styled.div<{ $checked?: boolean }>`
-  color: ${(props) => (props.$checked ? checkedText : greyText)};
+  /* color: ${(props) => (props.$checked ? checkedText : greyText)}; */
 
   transition: color 0.2s ease;
 
@@ -99,7 +108,7 @@ const SongName = styled.div<{ $checked?: boolean }>`
   pointer-events: none;
 `;
 const Length = styled.div<{ $checked?: boolean }>`
-  color: ${(props) => (props.$checked ? checkedText : greyText)};
+  /* color: ${(props) => (props.$checked ? checkedText : greyText)}; */
 
   transition: color 0.2s ease;
   grid-area: length;
@@ -144,7 +153,7 @@ const NoAudioText = styled.div<{ $checked?: boolean }>`
   text-align: center;
 
   transition: color 0.2s ease;
-  color: ${(props) => (props.$checked ? checkedText : greyText)};
+  /* color: ${(props) => (props.$checked ? checkedText : greyText)}; */
 `;
 
 type SongProps = {

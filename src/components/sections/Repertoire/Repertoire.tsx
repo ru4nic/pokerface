@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { useInView } from 'react-intersection-observer';
 import styled from 'styled-components';
 
@@ -8,13 +8,15 @@ import {
   Song as typeSong,
 } from '../../../slices/cartSlice';
 
-import Inner from './Inner';
+// import Inner from './Inner';
+const Inner = lazy(() => import('./Inner'));
 import { Section, Title, Container, Paragraph } from '../../base_styles/styles';
 import { addSong, clearCart } from '../../../slices/cartSlice';
 import { ImFilePdf } from 'react-icons/im';
 import { StyledButton } from '../../UI/Button/StyledButton';
 import { buttons } from './data';
 import links from '../../data/links';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const WrapperButtons = styled.div`
   display: flex;
@@ -43,20 +45,37 @@ const Repertoire = () => {
       const parsedCart = JSON.parse(initialCart); //Парсим данные из localStorage в Redux и обновляем состояние сразу после загрузки страницы
       parsedCart.forEach((song: typeSong) => {
         dispatch(addSong(song)); // Добавление списка песен
-        // dispatch(toggleSongChecked(song.song)); //Выделение песен в списке 'checked'
       });
     }
   }, []);
   return (
     <Section id={links.sections.forClients}>
+      <div ref={ref}></div>
       <Container $default>
-        <div ref={ref}></div>
         <Title>Заказчикам</Title>
         <Paragraph $dark $forClients>
           Соберите сет-лист из репертуара группы на своё мероприятие и отправьте
           его нам!
         </Paragraph>
-        {inView && <Inner />}
+        {inView && (
+          <Suspense
+            fallback={
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  height: '100%',
+                  width: '100%',
+                }}
+              >
+                <CircularProgress disableShrink color="error" />
+              </div>
+            }
+          >
+            <Inner />
+          </Suspense>
+        )}
         <WrapperButtons>
           {buttons.map((button) => {
             const { text, href, id } = button;

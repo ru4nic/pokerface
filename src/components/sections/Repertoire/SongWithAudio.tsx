@@ -15,11 +15,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
 import { setPlaying } from '../../../slices/audioSlice';
 
-declare module '@mui/material/SvgIcon' {
-  interface SvgIconPropsColorOverrides {
-    redPlay: true;
-  }
-}
+// declare module '@mui/material/SvgIcon' {
+//   interface SvgIconPropsColorOverrides {
+//     redPlay: true;
+//   }
+// }
 
 type SongWithAudio = {
   src: string;
@@ -61,14 +61,14 @@ const SongWithAudio = ({ src, srcSong, setSrcSong, song }: SongWithAudio) => {
           {srcSong === src && currentPlayingSong && !audioPlayerState ? (
             <PauseCircleIcon
               fontSize="large"
-              color={checked ? 'inherit' : 'redPlay'}
+              color={checked ? 'inherit' : 'error'}
             />
           ) : (
             <PlayCircleIcon
               fontSize="large"
               color={
                 srcSong === src && audioPlayerState && !checked
-                  ? 'redPlay'
+                  ? 'error'
                   : 'inherit'
               }
             />

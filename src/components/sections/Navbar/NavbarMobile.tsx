@@ -37,7 +37,7 @@ const NavbarMobile = ({ StyledIcon }: NavbarMobileProps) => {
   return (
     <Toolbar disableGutters variant="dense">
       <IconWrapp>
-        <IconButton size="medium" color="white" onClick={handleMenuClick}>
+        <IconButton size="medium" color="warning" onClick={handleMenuClick}>
           <MenuIcon />
         </IconButton>
       </IconWrapp>
