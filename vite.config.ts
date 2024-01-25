@@ -12,6 +12,9 @@ export default defineConfig({
             {
               displayName: true,
               fileName: true,
+              pure: true,
+              ssr: false,
+              meaninglessFileNames: ['index', 'styles'],
             },
           ],
         ],
