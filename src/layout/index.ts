@@ -7,12 +7,5 @@ import {
   StyledLink,
   StyledLogo,
 } from './main';
-export {
-  GlobalStyles,
-  Section,
-  Container,
-  Title,
-  Paragraph,
-  StyledLink,
-  StyledLogo,
-};
+export default GlobalStyles;
+export { Section, Container, Title, Paragraph, StyledLink, StyledLogo };

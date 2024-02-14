@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 import * as Base from '../../layout/main';
 import animation from '../../components/animation/animation';
 import links from '../../data/links';
-import * as S from './about.styled';
+import { AboutSection } from './about.styled';
 
 const Carousel = lazy(() => import('./carousel'));
 
@@ -17,7 +17,7 @@ function About() {
   });
 
   return (
-    <S.AboutSection id={links.sections.about} ref={ref} $inView={inView}>
+    <AboutSection id={links.sections.about} ref={ref} $inView={inView}>
       <Base.Container $default>
         <Base.Title {...animation} data-test="about_title">
           POKERFACE
@@ -54,18 +54,18 @@ function About() {
             smooth={true}
             offset={-70}
             duration={500}
-            $red={'red'}
+            $red={true}
           >
             репертуар
           </Base.StyledLink>{' '}
           коллектива включены лучшие песни из дискотеки 80-х, 90-х, зарубежного
           и отечественного рока, современных поп-хитов и не только.
         </Base.Paragraph>
-        <Suspense fallback={<div>Загрузка...</div>}>
-          <Carousel />
-        </Suspense>
       </Base.Container>
-    </S.AboutSection>
+      <Suspense fallback={<div>Загрузка...</div>}>
+        <Carousel />
+      </Suspense>
+    </AboutSection>
   );
 }
 

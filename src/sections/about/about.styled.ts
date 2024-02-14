@@ -14,6 +14,8 @@ const AboutSection = styled.section<{ $inView?: boolean }>`
   background-repeat: no-repeat;
   background-position: 50% 0%;
   color: ${theme.colors.primaryText};
+  /* width: 100%;
+  height: 100%; */
 
   @media (max-width: 950px) {
     background-size: 100%, 250%;

@@ -42,9 +42,8 @@ const GlobalStyles = createGlobalStyle`
     #root {
         margin: 0;
         padding: 0;
-        
     }
-    
+
     h2 {
         font-size: 2rem;
         margin-top: 0;

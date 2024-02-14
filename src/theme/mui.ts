@@ -76,6 +76,13 @@ let muiTheme = createTheme({
         color: 'error',
       },
     },
+    MuiModal: {
+      styleOverrides: {
+        backdrop: {
+          backgroundColor: 'rgba(0, 0, 0, 0.9)',
+        },
+      },
+    },
   },
 });
 muiTheme = createTheme(muiTheme, {

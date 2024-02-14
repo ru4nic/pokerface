@@ -1,2 +1,2 @@
-import Carousel from './carousel';
-export default Carousel;
+import CarouselRender from './carousel.render';
+export default CarouselRender;

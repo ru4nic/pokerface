@@ -15,7 +15,8 @@ type PopupSongListProps = {
 const CartList = ({ handleCloseDialog }: PopupSongListProps) => {
   const songsInCart = useSelector((state: RootState) => state.cart.value);
   const dispatch = useDispatch();
-  const deleteSongHandler = (song: typeSong) => {
+
+  const removeItemHandler = (song: typeSong) => {
     // Удаляем песню из корзины по клику на кнопку "удалить" напротив каждой песни
     dispatch(removeSong(song));
     if (songsInCart.length === 1) {
@@ -36,7 +37,7 @@ const CartList = ({ handleCloseDialog }: PopupSongListProps) => {
                 <IconButton
                   color="inherit"
                   onClick={() =>
-                    deleteSongHandler({
+                    removeItemHandler({
                       author: author,
                       song: song,
                       length: length,

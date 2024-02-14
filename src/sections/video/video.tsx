@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import { Box } from './video.styled';
-import Preview from './components/preview';
+import Preview from './preview/preview';
 import { Section, Container, Title } from '../../layout/main';
 
 import { videos } from './video.data';
@@ -19,7 +19,7 @@ function Video() {
       <Container $default>
         <Title {...animation}>Видео</Title>
         <Box>
-          {videos.map((video, index) => {
+          {/* {videos.map((video, index) => {
             const { src, link, id, desc } = video;
             return (
               <Preview
@@ -31,7 +31,7 @@ function Video() {
                 handleVideoClick={() => handleVideoClick(index)}
               />
             );
-          })}
+          })} */}
         </Box>
       </Container>
     </Section>

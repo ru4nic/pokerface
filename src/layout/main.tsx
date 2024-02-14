@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-//@ts-ignore
 import { Link } from 'react-scroll';
 
 import { motion } from 'framer-motion';
@@ -14,6 +13,8 @@ const Container = styled.div<{ $default?: boolean; $footer?: boolean }>`
   padding: ${(props) =>
     props.$default ? '7rem 14rem 0rem' : props.$footer ? '3rem 6rem' : '7rem'};
   max-width: 100%;
+  height: 100%;
+  width: 100%;
 
   @media screen and (max-width: 908px) {
     padding: ${(props) =>
@@ -22,9 +23,9 @@ const Container = styled.div<{ $default?: boolean; $footer?: boolean }>`
   @media screen and (max-width: 625px) {
     padding: ${(props) =>
       props.$default
-        ? '5rem 2rem 0rem'
+        ? '5rem 1rem 0rem'
         : props.$footer
-        ? '3rem 2rem'
+        ? '3rem 2rem' //1 rem сделать (проверить на мобилках)
         : '5rem 2rem'};
   }
   @media (max-height: 820px) and (orientation: landscape) {
@@ -50,7 +51,6 @@ const Paragraph = styled(motion.p)<{
   $forClients?: boolean;
 }>`
   text-align: ${(props) => (props.$forClients ? 'center' : 'left')};
-  /* padding: 0 15%; */
   line-height: 1.3;
   font-family: ${theme.fonts.IbmLight};
   font-size: 1.3rem;
@@ -64,7 +64,7 @@ const Paragraph = styled(motion.p)<{
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(Link)<{ $red?: boolean }>`
   text-decoration: none;
   font-family: ${theme.fonts.RobotoRegular};
   font-weight: normal;

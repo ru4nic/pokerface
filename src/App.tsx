@@ -5,14 +5,14 @@ import { ThemeProvider } from '@mui/material/styles';
 import CircularProgress from '@mui/material/CircularProgress';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import GlobalStyles from './layout/GlobalStyles';
+import GlobalStyles from './layout';
 import { Provider } from 'react-redux';
 //My Components
 import Intro from './sections/intro';
 import { SpinnerWrapp } from './layout/main';
 const Navbar = lazy(() => import('./sections/navbar'));
 const About = lazy(() => import('./sections/about'));
-const Video = lazy(() => import('./sections/video'));
+// const Video = lazy(() => import('./sections/video'));
 const Features = lazy(() => import('./sections/features'));
 const ForClients = lazy(() => import('./sections/forclients'));
 const Contacts = lazy(() => import('./sections/contacts'));
@@ -49,7 +49,7 @@ function App() {
                   <Intro />
                 </div>
                 <About />
-                <Video />
+                {/* <Video /> */}
                 <Features />
                 <ForClients />
                 <Contacts />
