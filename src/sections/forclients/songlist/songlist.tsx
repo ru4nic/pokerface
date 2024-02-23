@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 
 import { useSelector } from 'react-redux';
-import Item from '../item/item';
+import Item from './item/item';
 import { selectSongs } from '../../../slices/songsSlice';
 import * as f from '../../../slices/filterSlice';
 

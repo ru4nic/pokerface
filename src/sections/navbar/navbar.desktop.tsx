@@ -1,39 +1,45 @@
 import Button from '@mui/material/Button';
+import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 
-import NavItem from './components/navitem';
+import NavItem from './navitem/navitem';
 import Logo from '../../components/logo';
 import Socials from '../../components/socials';
 
 import links from '../../data/links';
-import { NavList, Menu, StartIcon } from './navbar.styled';
+import { NavList, Menu } from './navbar.styled';
+import { StyledNavItem } from './navitem/navitem.styled';
 
 type NavbarDesktopProps = {
   inView: boolean;
-  navTitles: string[];
 };
-const NavbarDesktop = ({ inView, navTitles }: NavbarDesktopProps) => {
+const NavbarDesktop = ({ inView }: NavbarDesktopProps) => {
   return (
     <>
       <Logo section="desktopNav" />
       <Menu>
         <NavList>
-          {navTitles.map((name, index) => {
+          {Object.entries(links.sections).map(([key, value], index) => {
+            //Не показываем в меню раздел "Приемущества"
+            if (key === 'features') return;
             return (
               <NavItem
-                name={name} //О нас, Видео, Заказчикам
-                link={Object.values(links.sections)[index]}
+                name={value.name} //О нас, Портфолио, Заказчикам
+                link={Object.values(links.sections)[index].href}
                 key={index}
               />
             );
           })}
+          <StyledNavItem>
+            <Socials />
+          </StyledNavItem>
         </NavList>
       </Menu>
-      <Socials inView={inView} />
       <Button
         variant={inView ? 'contained' : 'text'}
         color={inView ? 'error' : 'white'}
-        startIcon={<StartIcon />}
+        startIcon={<PhoneAndroidIcon />}
         href={links.socials.phone}
+        size="small"
       >
         +7 (926) 461-02-36
       </Button>

@@ -14,19 +14,13 @@ type NavBarProps = {
   inView: boolean;
 };
 
-const navTitles = ['О нас', 'Видео', 'Заказчикам'];
-
 function Navbar({ inView }: NavBarProps) {
   const isTablet = useMediaQuery('(max-width:1076px)');
 
   return (
     <NavBar className="mui-fixed" $inView={inView} data-test="navbar">
       <Container>
-        {isTablet ? (
-          <NavbarMobile navTitles={navTitles} />
-        ) : (
-          <NavbarDesktop inView={inView} navTitles={navTitles} />
-        )}
+        {isTablet ? <NavbarMobile /> : <NavbarDesktop inView={inView} />}
       </Container>
     </NavBar>
   );

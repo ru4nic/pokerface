@@ -1,4 +1,4 @@
-import muiTheme from './mui';
-import theme from './main';
+import muiTheme from './theme.mui';
+import theme from './theme.main';
 export { muiTheme };
 export default theme;

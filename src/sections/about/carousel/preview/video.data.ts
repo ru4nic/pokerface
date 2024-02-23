@@ -1,11 +1,11 @@
-import img_01 from '../../assets/images/preview11.webp';
-import img_02 from '../../assets/images/preview22.jpg';
-import img_03 from '../../assets/images/preview33.jpg';
-import img_04 from '../../assets/images/preview44.webp';
-import img_05 from '../../assets/images/preview55.jpg';
-import img_06 from '../../assets/images/preview66.jpg';
-import img_07 from '../../assets/images/preview77.jpg';
-import img_08 from '../../assets/images/preview88.webp';
+import img_01 from '../../../../assets/images/preview11.webp';
+import img_02 from '../../../../assets/images/preview22.jpg';
+import img_03 from '../../../../assets/images/preview33.jpg';
+import img_04 from '../../../../assets/images/preview44.webp';
+import img_05 from '../../../../assets/images/preview55.jpg';
+import img_06 from '../../../../assets/images/preview66.jpg';
+import img_07 from '../../../../assets/images/preview77.jpg';
+import img_08 from '../../../../assets/images/preview88.webp';
 
 export type Videos = {
   link: string;

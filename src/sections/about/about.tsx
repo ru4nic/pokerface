@@ -17,7 +17,7 @@ function About() {
   });
 
   return (
-    <AboutSection id={links.sections.about} ref={ref} $inView={inView}>
+    <AboutSection id={links.sections.about.href} ref={ref} $inView={inView}>
       <Base.Container $default>
         <Base.Title {...animation} data-test="about_title">
           POKERFACE
@@ -49,7 +49,7 @@ function About() {
         >
           В{' '}
           <Base.StyledLink
-            to="for_clients"
+            to={links.sections.forClients.href}
             spy={true}
             smooth={true}
             offset={-70}

@@ -1,10 +1,10 @@
 interface Links {
   downloads: { repertoire: string; bytRider: string; techRider: string };
   sections: {
-    about: string;
-    video: string;
-    features: string;
-    forClients: string;
+    about: { name: string; href: string };
+    portfolio: { name: string; href: string };
+    features: { name: string; href: string };
+    forClients: { name: string; href: string };
   };
   socials: {
     vk: string;
@@ -23,10 +23,10 @@ const links: Links = {
     techRider: '/Pokerface_Tech_Rider.pdf',
   },
   sections: {
-    about: 'about',
-    video: 'video',
-    forClients: 'for_clients',
-    features: 'features',
+    about: { name: 'О группе', href: 'about' },
+    portfolio: { name: 'Портфолио', href: 'portfolio' },
+    features: { name: 'Приемущества', href: 'features' },
+    forClients: { name: 'Заказчикам', href: 'for_clients' },
   },
   socials: {
     vk: 'https://vk.com/pokerfacecoverband',

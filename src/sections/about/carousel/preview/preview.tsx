@@ -7,9 +7,9 @@ import CloseOutlined from '@mui/icons-material/CloseOutlined';
 
 import { CloseBtn, IconPlay, StyledIframe } from './preview.styled';
 
-import { setShowVideoIndex } from '../../../slices/videoSlice';
+import { setShowVideoIndex } from '../../../../slices/videoSlice';
 
-import { RootState } from '../../../store/store';
+import { RootState } from '../../../../store/store';
 
 type VideoPreviewProps = {
   link: string;

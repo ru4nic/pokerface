@@ -4,7 +4,6 @@ import links from './socials.data';
 
 type SocialsProps = {
   section?: 'appBar' | 'footer';
-  inView?: boolean;
 };
 function Socials({ section }: SocialsProps) {
   const socialsProps = { [`$${section}`]: true };
@@ -12,6 +11,7 @@ function Socials({ section }: SocialsProps) {
     <Wrapper {...socialsProps}>
       {links.map((link) => {
         const { id, href, title, icon: Icon } = link;
+
         return (
           <Tooltip title={title} key={id}>
             <Link

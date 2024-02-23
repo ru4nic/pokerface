@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { PlayBtn, Length as Duration } from '../../item/item.styled';
+import { PlayBtn, Length as Duration } from '../../songlist/item/item.styled';
 import theme from '../../../../theme';
 
 export const Item = styled.li`

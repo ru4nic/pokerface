@@ -3,16 +3,16 @@ import 'styled-components';
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      primaryText: '#2B2530'; //darkGrey & greyText & bkrndDark & bkrndNavBar
-      secondaryText: '#E9E7E4'; //whiteText
+      primaryText: '#000000aa';
+      secondaryText: '#E9E7E4';
       background: '#ffffff';
       cardBackground: '#ffffff20';
       navBackground: '#2B2530';
       footerBackground: '#2B2530';
       primary: '#d32f2f';
-      dark: '#2B2530';
+      dark: '#000000aa';
       link: '#ddd';
-      checkedBlock: '#00000012';
+      checkedBlock: '#d35757';
     };
     sizes: {
       heightOfNavBarDesktop: '5rem';

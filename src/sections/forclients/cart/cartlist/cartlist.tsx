@@ -7,11 +7,13 @@ import DeleteForeverRoundedIcon from '@mui/icons-material/DeleteForeverRounded';
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
 
-import { Song, Author } from '../../item/item.styled';
+import { Song, Author } from '../../songlist/item/item.styled';
 import { Item, DelBtn, Length } from './cartlist.styled';
+
 type PopupSongListProps = {
   handleCloseDialog: () => void;
 };
+
 const CartList = ({ handleCloseDialog }: PopupSongListProps) => {
   const songsInCart = useSelector((state: RootState) => state.cart.value);
   const dispatch = useDispatch();

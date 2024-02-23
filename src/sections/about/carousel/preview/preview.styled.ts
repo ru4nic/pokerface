@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import icon from '../../../assets/images/icons/icons8-youtube-play.svg';
+import icon from '../../../../assets/images/icons/icons8-youtube-play.svg';
 
 export const IconPlay = styled.button`
   width: 25%;
@@ -38,8 +38,9 @@ export const StyledIframe = styled.iframe`
     width: 80%;
   }
 `;
-export const CloseBtn = styled.div`
+export const CloseBtn = styled.div<{ $drawer?: boolean }>`
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: ${(props) => !props.$drawer && '1rem'};
+  left: ${(props) => props.$drawer && '1rem'};
 `;

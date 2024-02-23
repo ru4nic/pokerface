@@ -76,7 +76,7 @@ const Cart = () => {
           Ваш сет-лист
           <IconButton
             aria-label="close"
-            color="inherit"
+            color="warning"
             sx={{ p: 0.5, float: 'right' }}
             onClick={handleCloseDialog}
           >

@@ -6,12 +6,12 @@ import {
   removeSong,
   addSong,
   toggleSongChecked,
-} from '../../../slices/cartSlice';
+} from '../../../../slices/cartSlice';
 
 import { FaStar } from 'react-icons/fa';
 import { GiPineTree } from 'react-icons/gi';
-import { RootState } from '../../../store/store';
-import { Song as typeSong } from '../../../slices/cartSlice';
+import { RootState } from '../../../../store/store';
+import { Song as typeSong } from '../../../../slices/cartSlice';
 import { IconContext } from 'react-icons';
 
 import {
@@ -89,7 +89,11 @@ const Item = ({
           </IconContext.Provider>
         </Atrs>
       )}
-      {genre && <Genre $genre={genre}>{genre}</Genre>}
+      {genre && (
+        <Genre $genre={genre} $checked={checked}>
+          {genre}
+        </Genre>
+      )}
       {category === 'Новогодняя' && (
         <Category $category={category}>
           <IconContext.Provider value={{ color: 'green' }}>

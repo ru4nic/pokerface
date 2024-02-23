@@ -6,7 +6,7 @@ const { socials } = links;
 describe('<Socials />', () => {
   it('renders', () => {
     // see: https://on.cypress.io/mounting-react
-    cy.mount(<Socials section="footer" inView={false} />);
+    cy.mount(<Socials section="footer" />);
     cy.get('.icon').should('exist');
     //Проверяем 1ю кнопку
     cy.get('[role=tooltip]').should('not.exist'); //Подсказка скрыта (не монтирована в DOM)

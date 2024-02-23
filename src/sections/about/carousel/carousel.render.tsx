@@ -1,15 +1,15 @@
-//4. Наладить верстку с линиями в секиции репертуара (скроллы). На мобилках не корректны линии.
-//5. Добавить alt к описаниям видео
 //6. Сделать ссылку якорь на карусель название в навбаре - Портфолио например
+//7. Сделать Drawer на мобилке
 import { useRef } from 'react';
 
 import CarouselMain from './carousel.main';
 import Thumbs from './carousel.thumbs';
 
-import { videos } from '../../video/video.data';
+import { videos } from './preview/video.data';
 import { images } from './carousel.data';
-import Preview from '../../video/preview/preview';
+import Preview from './preview/preview';
 import { ContainerOfSwipers, Img, ThumbImg } from './carousel.styles';
+import links from '../../../data/links';
 
 type SlidesProps = {
   main?: boolean;
@@ -50,7 +50,7 @@ const CarouselRender = () => {
   const thumbsRef = useRef(null!);
 
   return (
-    <ContainerOfSwipers>
+    <ContainerOfSwipers id={links.sections.portfolio.href}>
       <CarouselMain forwardedRef={thumbsRef}>
         <VideoSlides main />
         <ImageSlides main />

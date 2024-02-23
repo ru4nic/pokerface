@@ -48,7 +48,7 @@ const TopMenu = () => {
                 return (
                   <StyledLink
                     key={item.name}
-                    to={item.link}
+                    to={item.href}
                     {...scrollLinkSettings}
                   >
                     <Underline>{item.name}</Underline>
@@ -63,7 +63,8 @@ const TopMenu = () => {
             <Title>{column.header}</Title>
             {column.items.map((item) => {
               return (
-                <StyledLink key={item.name} href={item.link} as="a">
+                //@ts-ignore
+                <StyledLink key={item.name} href={item.href} as="a">
                   <Underline>{item.name}</Underline>
                 </StyledLink>
               );

@@ -19,6 +19,9 @@ export const StyledNavItem = styled.li`
   &:nth-child(1) {
     margin: 0;
   }
+  &:last-child {
+    margin-right: 2em;
+  }
 `;
 export const StyledNavLink = styled(Link)`
   text-decoration: none;
@@ -30,7 +33,7 @@ export const StyledNavLink = styled(Link)`
   display: block;
   transition: color 0.2s ease;
   border: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
   outline: 0;
   cursor: pointer;
   border-radius: 0.2em;

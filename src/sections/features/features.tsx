@@ -1,6 +1,6 @@
 import { Section, Container, Title } from '../../layout/main';
 import { CardsWrapper } from './features.styled';
-import Card from './components/card';
+import Card from './card';
 
 import cards from './features.data';
 import animation from '../../components/animation/animation';
@@ -8,7 +8,7 @@ import links from '../../data/links';
 
 function Features() {
   return (
-    <Section id={links.sections.features}>
+    <Section id={links.sections.features.href}>
       <Container $default>
         <Title {...animation}>Наши приемущества</Title>
         <CardsWrapper>

@@ -16,7 +16,7 @@ export const Underline = styled.span`
     transition: width 0.2s ease-in-out;
   }
 `;
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)<{ $copyright: boolean }>`
   display: ${(props) => (props.$copyright ? '' : 'block')};
   font-size: 0.9rem;
   text-decoration: none;

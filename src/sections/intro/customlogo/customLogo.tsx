@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import font from '../../../assets/fonts/palatinolinotype_roman.ttf';
 import smile from '../../../assets/images/PokerFace_logo_smile.webp';
-import * as v from '../../../theme/main';
+import theme from '../../../theme/theme.main';
 
 const Wrapper = styled.div`
   @font-face {
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   font-size: 1.2rem;
   color: #fff;
   position: absolute;
-  top: calc(8% + ${v.heightOfNavBarDesktop});
+  top: calc(8% + ${theme.sizes.heightOfNavBarDesktop});
   left: 50%;
   transform: translateX(-50%);
   @media (max-width: 915px) {
@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   }
   @media (max-height: 820px) and (orientation: landscape) {
     font-size: 0.9rem;
-    top: calc(8% + ${v.heightOfNavBarDesktop});
+    top: calc(8% + ${theme.sizes.heightOfNavBarDesktop});
   }
   @media (max-height: 450px) and (orientation: landscape) {
     top: 7%;

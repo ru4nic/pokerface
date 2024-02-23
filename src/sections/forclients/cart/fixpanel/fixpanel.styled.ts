@@ -5,7 +5,8 @@ export const Block = styled.section`
   position: fixed;
   right: 2.3%;
   top: calc(${theme.sizes.heightOfNavBarDesktop} + 1rem);
-  background-color: #ffffffaa;
+  /* background-color: #ffffffaa; */
+  background-color: #fffce0e0;
   backdrop-filter: blur(10px);
   /* -webkit-backdrop-filter: blur(10px); */
   padding: 1em;

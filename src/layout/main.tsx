@@ -16,17 +16,17 @@ const Container = styled.div<{ $default?: boolean; $footer?: boolean }>`
   height: 100%;
   width: 100%;
 
-  @media screen and (max-width: 908px) {
+  @media screen and (max-width: 1076px) {
     padding: ${(props) =>
-      props.$default ? '5rem 7rem 0rem' : props.$footer ? '3rem 7rem' : '7rem'};
+      props.$default ? '5rem 3rem 0rem' : props.$footer ? '3rem 3rem' : '3rem'};
   }
   @media screen and (max-width: 625px) {
     padding: ${(props) =>
       props.$default
         ? '5rem 1rem 0rem'
         : props.$footer
-        ? '3rem 2rem' //1 rem сделать (проверить на мобилках)
-        : '5rem 2rem'};
+        ? '3rem 1rem'
+        : '5rem 1rem'};
   }
   @media (max-height: 820px) and (orientation: landscape) {
     padding: 2rem;
@@ -105,6 +105,7 @@ const StyledLogo = styled.img<{
   margin-bottom: ${(props) => (props.$footer ? '1rem' : '')};
   display: ${(props) => (props.$footer ? 'block' : '')};
   filter: ${(props) => (props.$appBar ? 'brightness(30%)' : '')};
+  margin-top: ${(props) => props.$appBar && '8px'};
 `;
 
 const SpinnerWrapp = styled.div<{ $fullHeight?: boolean }>`

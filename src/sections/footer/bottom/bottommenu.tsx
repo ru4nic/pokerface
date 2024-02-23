@@ -11,6 +11,7 @@ const BottomMenu = () => {
           <StyledLink
             href="https://t.me/ru4nic"
             as="a"
+            //@ts-ignore
             $copyright
             target="_blank"
             rel="noreferrer"
@@ -23,6 +24,7 @@ const BottomMenu = () => {
           <StyledLink
             href="https://vk.com/yuriykuldo"
             as="a"
+            //@ts-ignore
             $copyright
             target="_blank"
             rel="noreferrer"

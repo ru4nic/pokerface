@@ -8,7 +8,7 @@ export const Desc = styled(motion.p)`
   line-height: 1.3;
   font-size: 1em;
   font-family: ${theme.fonts.IbmLight};
-  color: inherit;
+  color: #777777;
   font-weight: normal;
 `;
 export const Title = styled(motion.h3)`
@@ -26,7 +26,7 @@ export const CircleWrapp = styled(motion.div)`
   width: 3rem;
   height: 3rem;
   display: inline-block;
-  background: ${theme.colors.dark};
+  background: ${theme.colors.primary}cc;
   border-radius: 50%;
   position: relative;
 `;
@@ -35,7 +35,7 @@ export const StyledIcon = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  color: ${theme.colors.secondaryText};
+  color: ${theme.colors.background};
   font-size: 1.75rem;
   line-height: 1rem;
   transform: translate(-50%, -50%);

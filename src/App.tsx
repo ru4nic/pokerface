@@ -12,7 +12,6 @@ import Intro from './sections/intro';
 import { SpinnerWrapp } from './layout/main';
 const Navbar = lazy(() => import('./sections/navbar'));
 const About = lazy(() => import('./sections/about'));
-// const Video = lazy(() => import('./sections/video'));
 const Features = lazy(() => import('./sections/features'));
 const ForClients = lazy(() => import('./sections/forclients'));
 const Contacts = lazy(() => import('./sections/contacts'));
@@ -33,7 +32,7 @@ function App() {
 
   useEffect(() => {
     setIsPageLoaded(true);
-  }, []); // Пустой массив зависимостей означает, что useEffect сработает только при монтировании
+  }, []);
 
   return (
     <Provider store={store}>
@@ -49,7 +48,6 @@ function App() {
                   <Intro />
                 </div>
                 <About />
-                {/* <Video /> */}
                 <Features />
                 <ForClients />
                 <Contacts />

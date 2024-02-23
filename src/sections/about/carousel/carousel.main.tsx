@@ -21,6 +21,7 @@ const CarouselMain = ({ children, forwardedRef }: CarouselMainProps) => {
       thumbs: {
         swiper: forwardedRef.current,
       },
+      autoHeight: true,
       spaceBetween: 5,
       grabCursor: true,
       navigation: true,

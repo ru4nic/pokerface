@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import theme from '../../../theme';
+import theme from '../../../../theme';
 
 export const Block = styled.li<{ $checked?: boolean }>`
   display: grid;
@@ -17,15 +17,18 @@ export const Block = styled.li<{ $checked?: boolean }>`
   font-family: ${theme.fonts.IbmLight};
   user-select: none;
   text-decoration: initial;
-  background-color: ${(props) => props.$checked && theme.colors.checkedBlock};
-  transition: background-color 0.2s ease, color 0.5s ease;
+  background-color: ${(props) => props.$checked && theme.colors.primary};
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
   border: 1px solid transparent;
-  margin: 0.4rem 0.4rem;
-  border-radius: 3px;
+  margin: 1.5rem 0.4rem;
+  border-radius: 6px;
   text-overflow: ellipsis;
   overflow: hidden;
   column-gap: 0.5rem;
   row-gap: 0.2rem;
+  border: 1px solid #00000025;
+  color: ${(props) => props.$checked && 'white'};
   &:first-child {
     margin-top: 0;
     border-top: none;
@@ -37,8 +40,9 @@ export const Block = styled.li<{ $checked?: boolean }>`
     border-radius: 3px 3px 0 0;
   }
   &:hover {
-    border: 1px solid #00000025;
-    box-shadow: 0 2px 3px #00000010;
+    background-color: ${(props) => (props.$checked ? '#a72626' : '#00000010')};
+
+    box-shadow: 1px 2px 2px #00000010;
     &:last-child {
       border-bottom: none;
     }
@@ -61,14 +65,12 @@ export const Author = styled.div<{ $checked?: boolean }>`
   font-family: ${theme.fonts.RobotoMedium};
   grid-area: author;
   text-overflow: ellipsis;
-  transition: color 0.2s ease;
   white-space: nowrap;
   overflow: hidden;
   pointer-events: none;
 `;
 
 export const Song = styled.div<{ $checked?: boolean }>`
-  transition: color 0.2s ease;
   grid-area: song;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -76,7 +78,6 @@ export const Song = styled.div<{ $checked?: boolean }>`
   pointer-events: none;
 `;
 export const Length = styled.div<{ $checked?: boolean }>`
-  transition: color 0.2s ease;
   grid-area: length;
   pointer-events: none;
   text-align: center;
@@ -108,15 +109,18 @@ export const Category = styled.div<{
   font-size: ${(props) => props.$category === 'Новогодняя' && '1.1rem'};
   display: flex;
 `;
-export const Genre = styled.div<{ $genre?: 'Disco' | 'Pop' | 'Rock' }>`
+export const Genre = styled.div<{
+  $genre?: 'Disco' | 'Pop' | 'Rock';
+  $checked?: boolean;
+}>`
   display: flex;
   justify-content: center;
-  font-family: ${theme.fonts.IbmExtraLight};
+  font-family: ${theme.fonts.IbmRegular};
   grid-area: genre;
+  color: ${(props) => (props.$checked ? 'white' : theme.colors.primary)};
   font-size: ${(props) => props.$genre && '0.7rem'};
   text-transform: ${(props) => props.$genre && 'uppercase'};
 `;
 export const NoAudioText = styled.div<{ $checked?: boolean }>`
   text-align: center;
-  transition: color 0.2s ease;
 `;

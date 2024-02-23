@@ -27,12 +27,12 @@ export const Col = styled.ul<{ $filteredSongsLength: number }>`
     props.$filteredSongsLength <= 3 ? 'min-content' : 'auto'};
   min-height: min-content;
   border: 1px solid #00000020;
-  border-right: none;
+  /* border-right: none; */
   border-bottom: ${(props) => props.$filteredSongsLength === 0 && 'none'};
   border-left: 1px solid #00000020;
   @media (max-width: 1076px) {
     max-height: 49vmax;
-    border: 1px solid #00000020;
+    /* border: 1px solid #00000020; */
     border-radius: 6px;
   }
 `;

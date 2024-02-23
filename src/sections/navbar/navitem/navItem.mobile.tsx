@@ -9,25 +9,20 @@ import theme from '../../../theme';
 type NavItemMobileProps = {
   linkTo: string;
   name: string;
-  handleMenuClose: () => void;
+  toggleDrawer: () => void;
 };
 
-const NavItemMobile = ({
-  linkTo,
-  name,
-  handleMenuClose,
-}: NavItemMobileProps) => {
+const NavItemMobile = ({ linkTo, name, toggleDrawer }: NavItemMobileProps) => {
   const muiTheme = useTheme();
 
   return (
     <Link to={linkTo} spy={true} smooth={true} offset={-50} duration={500}>
       <MenuItem
-        onClick={handleMenuClose}
+        onClick={toggleDrawer}
         sx={{
           fontFamily: theme.fonts.IbmRegular,
           justifyContent: 'center',
-          fontSize: '1.1rem',
-          color: muiTheme.palette.warning.main,
+          color: muiTheme.palette.grey[700],
         }}
       >
         {name}

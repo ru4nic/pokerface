@@ -16,17 +16,17 @@ const scrollLinkSettings: iScrollLinkSettings = {
 
 interface FooterColumnData {
   header: string;
-  items: { name: string; link: string }[];
+  items: { name: string; href: string }[];
 }
-
+const { about, portfolio, features, forClients } = links.sections;
 const footerColumnData: FooterColumnData[] = [
   {
     header: 'Разделы',
     items: [
-      { name: 'О группе', link: links.sections.about },
-      { name: 'Видео', link: links.sections.video },
-      { name: 'Приемущства', link: links.sections.features },
-      { name: 'Заказчикам', link: links.sections.forClients },
+      { name: about.name, href: about.href },
+      { name: portfolio.name, href: portfolio.href },
+      { name: features.name, href: features.href },
+      { name: forClients.name, href: forClients.href },
     ],
   },
   {
@@ -34,25 +34,25 @@ const footerColumnData: FooterColumnData[] = [
     items: [
       {
         name: 'Репертуар',
-        link: links.downloads.repertoire,
+        href: links.downloads.repertoire,
       },
       {
         name: 'Бытовой райдер',
-        link: links.downloads.bytRider,
+        href: links.downloads.bytRider,
       },
       {
         name: 'Технический райдер',
-        link: links.downloads.techRider,
+        href: links.downloads.techRider,
       },
     ],
   },
   {
     header: 'Партнеры',
     items: [
-      { name: 'Recastman studio', link: 'https://vk.com/recastman_studio' },
+      { name: 'Recastman studio', href: 'https://vk.com/recastman_studio' },
       {
         name: 'Svetlana Samoletova',
-        link: 'https://ru4nic.github.io/s_samoletova/',
+        href: 'https://ru4nic.github.io/s_samoletova/',
       },
     ],
   },

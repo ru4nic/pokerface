@@ -59,7 +59,7 @@ const ForClients = () => {
     }
   }, []);
   return (
-    <Section id={links.sections.forClients}>
+    <Section id={links.sections.forClients.href}>
       {!inView && <div ref={ref} />}
       <Container $default>
         <Title>Заказчикам</Title>

@@ -16,10 +16,9 @@ export const Box = styled.div`
   align-items: center;
   width: 60%;
   .rhap_container {
-    background-color: #ffffffbb;
+    background-color: #ffffffff;
     backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 7px 7px 0 0;
+    border-radius: 7px 0 0 0;
   }
   .rhap_main-controls {
     flex: 1 1 auto;
@@ -34,16 +33,16 @@ export const Box = styled.div`
     justify-content: flex-start;
   }
   .rhap_progress-filled {
-    background-color: ${theme.colors.dark};
+    background-color: ${theme.colors.primary};
   }
   .rhap_progress-bar-show-download {
-    background-color: ${theme.colors.dark}40;
+    background-color: ${theme.colors.primary}40;
   }
   .rhap_volume-filled {
-    background: ${theme.colors.dark};
+    background: ${theme.colors.primary};
   }
   .rhap_volume-bar {
-    background-color: ${theme.colors.dark}40;
+    background-color: ${theme.colors.primary}40;
   }
   .rhap_volume-indicator {
     background: #fff;
@@ -56,7 +55,7 @@ export const Box = styled.div`
     font-family: ${theme.fonts.IbmLight};
   }
   .rhap_button-clear {
-    color: ${theme.colors.dark};
+    color: ${theme.colors.primary};
   }
 
   .rhap_progress-indicator {
@@ -70,4 +69,8 @@ export const Box = styled.div`
 
 export const CloseBtn = styled.div`
   align-self: flex-end;
+  background-color: #ffffffff;
+  backdrop-filter: blur(20px);
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #00000012;
 `;

@@ -1,20 +1,6 @@
 import styled from 'styled-components';
-import { styled as stylem } from '@mui/material';
 
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
-
-import {
-  bkrndNavBar,
-  heightOfNavBarDesktop,
-  heightOfNavBarMobile,
-} from '../../theme/main';
-
-export const StartIcon = stylem(PhoneAndroidIcon)(({ theme }) => ({
-  fontSize: '1em',
-  [theme.breakpoints.down('md')]: {
-    width: '1.2rem',
-  },
-}));
+import theme from '../../theme/theme.main';
 
 export const Container = styled.div`
   display: flex;
@@ -42,9 +28,9 @@ export const NavList = styled.ul`
 `;
 
 export const NavBar = styled.div<{ $inView?: boolean }>`
-  background-color: ${(props) => (props.$inView ? '' : `${bkrndNavBar}80`)};
-
-  height: ${heightOfNavBarDesktop};
+  background-color: ${(props) =>
+    props.$inView ? '' : `${theme.colors.navBackground}80`};
+  height: ${theme.sizes.heightOfNavBarDesktop};
   left: 0;
   overflow: hidden;
   padding: 0;
@@ -62,7 +48,7 @@ export const NavBar = styled.div<{ $inView?: boolean }>`
   color: #fff;
   @media (max-width: 1076px) {
     background-color: unset;
-    height: ${heightOfNavBarMobile};
+    height: ${theme.sizes.heightOfNavBarMobile};
     backdrop-filter: unset;
   }
   @media (max-width: 908px) {
@@ -73,8 +59,7 @@ export const NavBar = styled.div<{ $inView?: boolean }>`
   }
 `;
 export const IconWrapp = styled.div`
-  background-color: #ffffffab;
+  background-color: ${theme.colors.background};
   border-radius: 0.25em;
   box-shadow: 0 1px 3px #00000080;
-  backdrop-filter: blur(3px);
 `;

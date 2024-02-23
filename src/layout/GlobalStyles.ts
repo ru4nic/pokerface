@@ -137,12 +137,12 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1280px) {
         html {
             font-size: 16px;
         }
     }
-    @media screen and (max-width: 980px) {
+    @media screen and (max-width: 1150px) {
         html {
             font-size: 15px;
         }

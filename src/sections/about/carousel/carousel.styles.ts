@@ -9,19 +9,20 @@ const ContainerOfSwipers = styled.div`
   /* width: 80%; */
   margin: 0 auto;
   padding: 0 14rem;
-  @media screen and (max-width: 908px) {
-    padding: 7rem;
+  @media screen and (orientation: portrait) and (max-width: 1076px) {
+    padding: 0rem;
   }
-  @media screen and (max-width: 625px) {
-    padding: 0;
+  @media screen and (orientation: landscape) and (max-width: 1076px) {
+    padding: 0 3rem;
+    width: 80%;
   }
 `;
 
 const Img = styled.img`
   width: 100%;
-  height: 100%;
+  /* height: 100%;
   aspect-ratio: 16/9;
-  object-position: center;
+  object-position: center; */
   display: block;
 `;
 const ThumbImg = styled.img`
@@ -69,7 +70,7 @@ const carouselMainStyles: CarouselStyles = [
         justify-self: end;
         margin-right: -4rem;
       }
-      @media (max-width: 750px){
+      @media (max-width: 1076px){
         .swiper {
           position: relative;
           display: block;
