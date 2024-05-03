@@ -1,11 +1,11 @@
 import links from '../../data/links';
 const { downloads } = links;
 const buttons = [
-  {
-    text: 'Репертуар',
-    href: downloads.repertoire,
-    id: 221,
-  },
+  // {
+  //   text: 'Репертуар',
+  //   href: downloads.repertoire,
+  //   id: 221,
+  // },
   {
     text: 'Бытовой райдер',
     href: downloads.bytRider,

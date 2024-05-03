@@ -9,6 +9,7 @@ const SectionIntro = styled.section`
   background-repeat: no-repeat;
   background-position: 50% 30%;
   background-attachment: fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;

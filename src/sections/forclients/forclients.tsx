@@ -57,7 +57,7 @@ const ForClients = () => {
         dispatch(addSong(song)); // Добавление списка песен
       });
     }
-  }, []);
+  }, [dispatch]);
   return (
     <Section id={links.sections.forClients.href}>
       {!inView && <div ref={ref} />}
