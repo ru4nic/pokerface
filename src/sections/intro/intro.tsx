@@ -1,4 +1,3 @@
-//@ts-ignore
 import { Link } from 'react-scroll';
 
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
