@@ -46,7 +46,6 @@ function About() {
             smooth={true}
             offset={-70}
             duration={500}
-            $red={true}
           >
             репертуар
           </Base.StyledLink>{' '}
