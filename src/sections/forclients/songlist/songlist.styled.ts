@@ -7,7 +7,7 @@ export const Heading = styled.div`
 export const Title = styled.h4`
   padding: 1rem;
   font-size: 1rem;
-  font-family: ${theme.fonts.IbmBold};
+  font-family: ${theme.fonts.IbmLight};
   color: ${theme.colors.primaryText};
   text-align: center;
   border: 1px solid #00000030;

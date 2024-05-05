@@ -26,6 +26,7 @@ import Player from './player/player';
 
 import links from '../../data/links';
 import Error from './error';
+import animation from '../../components/animation';
 // import Fetch from './fetch';
 const Fetch = lazy(() => import('./fetch'));
 const Cart = lazy(() => import('./cart'));
@@ -89,7 +90,7 @@ const ForClients = () => {
               {/* Отправляем запрос и показываем ошибку если не будет ответа от сервера */}
               <Fetch />
               <Cart />
-              <Wrapper>
+              <Wrapper {...animation} viewport={{ once: true }}>
                 <FilterForm />
                 <Heading>Репертуар</Heading>
                 <SongList srcSong={srcSong} setSrcSong={setSrcSong} />

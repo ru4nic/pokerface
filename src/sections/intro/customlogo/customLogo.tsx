@@ -17,13 +17,13 @@ const Wrapper = styled.div`
   align-items: center;
   font-size: 1.2rem;
   color: #fff;
-  position: absolute;
+  /* position: absolute;
   top: calc(8% + ${theme.sizes.heightOfNavBarDesktop});
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   @media (max-width: 915px) {
     font-size: 1.1rem;
-    top: 7vh;
+    /* top: 7vh; */
   }
   @media (max-width: 450px) {
     font-size: 1rem;

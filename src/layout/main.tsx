@@ -52,9 +52,9 @@ const Paragraph = styled(motion.p)<{
 }>`
   text-align: ${(props) => (props.$forClients ? 'center' : 'left')};
   line-height: 1.3;
-  font-family: ${theme.fonts.IbmLight};
-  font-size: 1.3rem;
-  margin: 0 0 4rem 0;
+  font-family: ${theme.fonts.IbmRegular};
+  font-size: 1.1rem;
+  margin: 0 0 2rem 0;
   color: ${(props) =>
     props.$dark ? theme.colors.primaryText : theme.colors.secondaryText};
 

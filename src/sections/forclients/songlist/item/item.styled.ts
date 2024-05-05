@@ -14,7 +14,7 @@ export const Block = styled.li<{ $checked?: boolean }>`
   position: relative;
   padding: 0.75rem 1rem;
   font-size: 0.8rem;
-  font-family: ${theme.fonts.IbmLight};
+  font-family: ${theme.fonts.IbmRegular};
   user-select: none;
   text-decoration: initial;
   background-color: ${(props) => props.$checked && theme.colors.primary};
@@ -62,7 +62,7 @@ export const Block = styled.li<{ $checked?: boolean }>`
 `;
 
 export const Author = styled.div<{ $checked?: boolean }>`
-  font-family: ${theme.fonts.RobotoMedium};
+  font-family: ${theme.fonts.IbmBold};
   grid-area: author;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -81,12 +81,14 @@ export const Length = styled.div<{ $checked?: boolean }>`
   grid-area: length;
   pointer-events: none;
   text-align: center;
+  color: #777;
 `;
 export const PlayBtn = styled.div`
   grid-area: play;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.9em;
   min-width: 5rem;
 `;
 export const Atrs = styled.div<{
@@ -106,7 +108,8 @@ export const Category = styled.div<{
 }>`
   grid-area: category;
   justify-content: center;
-  font-size: ${(props) => props.$category === 'Новогодняя' && '1.1rem'};
+  /* font-size: ${(props) => props.$category === 'Новогодняя' && '1.1rem'}; */
+  font-size: 0.7rem;
   display: flex;
 `;
 export const Genre = styled.div<{

@@ -6,15 +6,15 @@ import theme from '../../../theme';
 export const Desc = styled(motion.p)`
   margin: 0;
   line-height: 1.3;
-  font-size: 1em;
-  font-family: ${theme.fonts.IbmLight};
+  font-size: 0.9em;
+  font-family: ${theme.fonts.IbmRegular};
   color: #777777;
   font-weight: normal;
 `;
 export const Title = styled(motion.h3)`
   font-family: ${theme.fonts.IbmBold};
   font-weight: 500;
-  font-size: 1.3em;
+  font-size: 1.1em;
   line-height: 1;
   color: inherit;
   margin: 0.5rem 0 1em;

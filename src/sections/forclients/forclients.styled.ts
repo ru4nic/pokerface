@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 import theme from '../../theme';
+import { motion } from 'framer-motion';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled(motion.section)`
   display: flex;
   flex-wrap: wrap;
   width: 100%;

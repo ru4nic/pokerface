@@ -1,7 +1,5 @@
 import { lazy, Suspense } from 'react';
 
-import { useInView } from 'react-intersection-observer';
-
 import * as Base from '../../layout/main';
 import animation from '../../components/animation/animation';
 import links from '../../data/links';
@@ -10,14 +8,8 @@ import { AboutSection } from './about.styled';
 const Carousel = lazy(() => import('./carousel'));
 
 function About() {
-  const { ref, inView } = useInView({
-    root: null,
-    threshold: 0.2,
-    triggerOnce: true,
-  });
-
   return (
-    <AboutSection id={links.sections.about.href} ref={ref} $inView={inView}>
+    <AboutSection id={links.sections.about.href}>
       <Base.Container $default>
         <Base.Title {...animation} data-test="about_title">
           POKERFACE

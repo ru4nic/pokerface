@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const Box = styled.section`
+export const Box = styled(motion.section)`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
