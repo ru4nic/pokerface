@@ -15,14 +15,8 @@ const Intro = () => {
   return (
     <S.SectionIntro id="intro">
       <S.VideoContainer>
-        <S.Video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/src/assets/images/bknd_head.webp"
-        >
-          <source src="pokerface_promo2023.mp4" />
+        <S.Video autoPlay muted loop playsInline poster="bknd_head.webp">
+          <source src="https://pokerfaceband.ru/pokerface_promo2023.mp4" />
         </S.Video>
         <S.BckrndOverlay />
       </S.VideoContainer>
