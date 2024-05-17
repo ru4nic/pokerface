@@ -72,6 +72,10 @@ const VideoContainer = styled.div`
   overflow: hidden;
   z-index: 0;
   direction: ltr;
+  /* @media (max-width: 900px) {
+    height: 100vh;
+    width: 100vw;
+  } */
 `;
 const BckrndOverlay = styled.div`
   background-color: #000000fa;
@@ -92,8 +96,14 @@ const Video = styled.video`
   min-width: 100%;
   object-fit: cover;
 
-  /* @media (max-width: 900px) {
-  } */
+  @media (max-width: 900px) {
+    width: 100%;
+    height: 100%;
+    position: static;
+    top: unset;
+    left: unset;
+    transform: unset;
+  }
 `;
 
 const BlockDesc = styled.div`
