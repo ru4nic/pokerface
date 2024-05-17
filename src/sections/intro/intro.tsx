@@ -9,8 +9,8 @@ import CustomLogo from './customlogo/index.ts';
 import * as S from './intro.styled.ts';
 import Button from '@mui/material/Button';
 
-import mobileVideo from 'https://pokerfaceband.ru/PokerFace_9-09-23_mobile.mp4';
-import desktopVideo from 'https://pokerfaceband.ru/PokerFace_9-09-23_desktop.mp4';
+import mobileVideo from '../../assets/videos/PokerFace_9-09-23_mobile.mp4';
+import desktopVideo from '../../assets/videos/PokerFace_9-09-23_desktop.mp4';
 
 const Intro = () => {
   const isMobile = useMediaQuery('(max-width:900px)');
