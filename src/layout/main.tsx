@@ -64,14 +64,14 @@ const Paragraph = styled(motion.p)<{
   }
 `;
 
-const StyledLink = styled(Link)<{ $red?: boolean }>`
+const StyledLink = styled(Link)`
   text-decoration: none;
   font-family: ${theme.fonts.RobotoRegular};
   font-weight: normal;
   opacity: 1;
   transition: opacity 0.2s ease, text-shadow 0.2s ease;
   cursor: pointer;
-  color: ${(props) => (props.$red ? theme.colors.primary : '#63daff')};
+  color: ${theme.colors.primary};
   position: relative;
   &::after {
     content: '';
@@ -80,8 +80,7 @@ const StyledLink = styled(Link)<{ $red?: boolean }>`
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: ${(props) =>
-      props.$red ? theme.colors.primary : '#63daff'};
+    background-color: ${theme.colors.primary};
     transition: width 0.2s ease-in-out;
   }
   &:hover {

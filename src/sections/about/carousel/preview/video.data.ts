@@ -1,5 +1,5 @@
-import img_01 from '../../../../assets/images/preview11.webp';
-import img_02 from '../../../../assets/images/preview22.jpg';
+// import img_01 from '../../../../assets/images/preview11.webp';
+// import img_02 from '../../../../assets/images/preview22.jpg';
 import img_03 from '../../../../assets/images/preview33.jpg';
 import img_04 from '../../../../assets/images/preview44.webp';
 import img_05 from '../../../../assets/images/preview55.jpg';
@@ -15,16 +15,16 @@ export type Videos = {
 };
 export const videos: Videos[] = [
   {
-    link: 'https://www.youtube.com/embed/jo_fev_YwDQ?autoplay=1',
-    // desc: 'Промо 2023',
-    src: img_04,
-    id: 0.1,
-  },
-  {
     link: 'https://www.youtube.com/embed/9GnR9fJafJE?autoplay=1',
     desc: 'Выступление Pokerface на День Города Живой Звук',
     src: img_08,
     id: 0.2,
+  },
+  {
+    link: 'https://www.youtube.com/embed/jo_fev_YwDQ?autoplay=1',
+    // desc: 'Промо 2023',
+    src: img_04,
+    id: 0.1,
   },
   {
     link: 'https://www.youtube.com/embed/HuzhEXBPawU?autoplay=1',
@@ -45,18 +45,18 @@ export const videos: Videos[] = [
     src: img_07,
     id: 0.5,
   },
-  {
-    link: 'https://www.youtube.com/embed/9cd5487jIKg?autoplay=1',
-    // desc: 'ГЦ Станция',
-    src: img_01,
-    id: 0.6,
-  },
-  {
-    link: 'https://www.youtube.com/embed/BGVDtUDIUxU?autoplay=1',
-    // desc: 'ГЦ Станция',
-    src: img_02,
-    id: 0.7,
-  },
+  // {
+  //   link: 'https://www.youtube.com/embed/9cd5487jIKg?autoplay=1',
+  //   // desc: 'ГЦ Станция',
+  //   src: img_01,
+  //   id: 0.6,
+  // },
+  // {
+  //   link: 'https://www.youtube.com/embed/BGVDtUDIUxU?autoplay=1',
+  //   // desc: 'ГЦ Станция',
+  //   src: img_02,
+  //   id: 0.7,
+  // },
   {
     link: 'https://www.youtube.com/embed/u_LfYj6CASY?autoplay=1',
     // desc: 'ГЦ Станция [Open Air]',

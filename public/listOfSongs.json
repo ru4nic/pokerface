@@ -60,6 +60,16 @@
     "category": ""
   },
   {
+    "author": "Братья Гримм",
+    "title": "Ресницы",
+    "length": "3.37",
+    "src": "",
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
+  },
+  {
     "author": "Билан Дима",
     "title": "Держи",
     "length": "3.44",
@@ -77,6 +87,16 @@
     "type": "Отечественные",
     "genre": "Disco",
     "rating_top": true,
+    "category": ""
+  },
+  {
+    "author": "Газманов Олег",
+    "title": "Есаул",
+    "length": "4.05",
+    "src": "",
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
     "category": ""
   },
   {
@@ -441,6 +461,16 @@
     "category": ""
   },
   {
+    "author": "Чичерина",
+    "title": "Ту-лу-ла",
+    "length": "3.26",
+    "src": "",
+    "type": "Отечественные",
+    "genre": "Rock",
+    "rating_top": false,
+    "category": ""
+  },
+  {
     "author": "Ю. Шатунов",
     "title": "Седая Ночь",
     "length": "5.12",
@@ -467,6 +497,16 @@
     "src": "/example_tracks/shura.mp3",
     "type": "Отечественные",
     "genre": "Pop",
+    "rating_top": false,
+    "category": ""
+  },
+  {
+    "author": "AC/DC, Prodigy",
+    "title": "Smack My Bitch Up/Thunderstuck",
+    "length": "2.33",
+    "src": "",
+    "type": "Зарубежные",
+    "genre": "Rock",
     "rating_top": false,
     "category": ""
   },
@@ -807,6 +847,16 @@
     "src": "",
     "type": "Зарубежные",
     "genre": "Disco",
+    "rating_top": false,
+    "category": ""
+  },
+  {
+    "author": "Stewart David A.",
+    "title": "Lily Was Here",
+    "length": "4.20",
+    "src": "",
+    "type": "Зарубежные",
+    "genre": "Pop",
     "rating_top": false,
     "category": ""
   },
