@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import theme from '../../../theme';
 
 export const Box = styled(motion.section)`
   width: 100%;
@@ -36,7 +37,7 @@ export const GroupHeader = styled('div')(() => ({
   top: '-8px',
   padding: '4px 10px',
   color: 'white',
-  backgroundColor: '#91865c9f',
+  backgroundColor: `${theme.colors.checkedBlock}aa`,
   backdropFilter: 'blur(5px)',
 }));
 export const GroupItems = styled('ul')({

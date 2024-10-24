@@ -6,18 +6,19 @@ export const Block = styled.li<{ $checked?: boolean }>`
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    'play author atributes'
-    'play song length'
+    'play song atributes'
+    'play author length'
     'genre . category';
   align-items: center;
   cursor: pointer;
   position: relative;
   padding: 0.75rem 1rem;
-  font-size: 0.8rem;
-  font-family: ${theme.fonts.IbmRegular};
+  font-size: 0.9rem;
+  font-family: ${theme.fonts.IbmLight};
   user-select: none;
   text-decoration: initial;
-  background-color: ${(props) => props.$checked && theme.colors.primary};
+  background-color: ${(props) =>
+    props.$checked && `${theme.colors.checkedBlock}`};
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     box-shadow 0.2s ease-in-out;
   border: 1px solid transparent;
@@ -40,7 +41,8 @@ export const Block = styled.li<{ $checked?: boolean }>`
     border-radius: 3px 3px 0 0;
   }
   &:hover {
-    background-color: ${(props) => (props.$checked ? '#a72626' : '#00000010')};
+    background-color: ${(props) =>
+      props.$checked ? `${theme.colors.checkedBlock}dd` : '#00000010'};
 
     box-shadow: 1px 2px 2px #00000010;
     &:last-child {
@@ -55,14 +57,14 @@ export const Block = styled.li<{ $checked?: boolean }>`
     padding: 0.75rem 1rem;
   }
   @media screen and (max-width: 450px) {
-    font-size: 12px;
+    font-size: 15px;
     padding: 0.75rem 0.9rem;
     border-radius: ${(props) => props.$checked && '7px'};
   }
 `;
 
 export const Author = styled.div<{ $checked?: boolean }>`
-  font-family: ${theme.fonts.IbmBold};
+  letter-spacing: 0.2px;
   grid-area: author;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -76,12 +78,12 @@ export const Song = styled.div<{ $checked?: boolean }>`
   white-space: nowrap;
   overflow: hidden;
   pointer-events: none;
+  font-family: ${theme.fonts.IbmBold};
 `;
 export const Length = styled.div<{ $checked?: boolean }>`
   grid-area: length;
   pointer-events: none;
   text-align: center;
-  color: #777;
 `;
 export const PlayBtn = styled.div`
   grid-area: play;
@@ -108,8 +110,8 @@ export const Category = styled.div<{
 }>`
   grid-area: category;
   justify-content: center;
-  /* font-size: ${(props) => props.$category === 'Новогодняя' && '1.1rem'}; */
-  font-size: 0.7rem;
+  font-size: ${(props) =>
+    props.$category === 'Новогодняя' ? '1.5em' : '0.9em'};
   display: flex;
 `;
 export const Genre = styled.div<{
@@ -118,10 +120,8 @@ export const Genre = styled.div<{
 }>`
   display: flex;
   justify-content: center;
-  font-family: ${theme.fonts.IbmRegular};
   grid-area: genre;
-  color: ${(props) => (props.$checked ? 'white' : theme.colors.primary)};
-  font-size: ${(props) => props.$genre && '0.7rem'};
+  font-size: ${(props) => props.$genre && '0.9em'};
   text-transform: ${(props) => props.$genre && 'uppercase'};
 `;
 export const NoAudioText = styled.div<{ $checked?: boolean }>`

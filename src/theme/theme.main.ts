@@ -11,7 +11,9 @@ const theme: DefaultTheme = {
     primary: '#d32f2f',
     dark: '#000000aa',
     link: '#ddd',
-    checkedBlock: '#d35757',
+    checkedBlock: '#793b3d',
+    titleSongsColor: '#ad9566',
+    cartBackground: '#f5f7f8',
   },
   sizes: {
     heightOfNavBarDesktop: '5rem',

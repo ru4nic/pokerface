@@ -113,7 +113,7 @@ const Item = ({
         />
       ) : (
         <PlayBtn>
-          <NoAudioText $checked={checked}>нет аудиозаписи</NoAudioText>
+          <NoAudioText $checked={checked}>{/* нет аудиозаписи */}</NoAudioText>
         </PlayBtn>
       )}
     </Block>

@@ -7,6 +7,8 @@ import { StyledLink, Underline } from '../link';
 import Logo from '../../../components/logo';
 
 import footerColumnData, { scrollLinkSettings } from '../footer.data';
+import { useSelector } from 'react-redux';
+import { selectBlobState } from '../../../slices/blobSlice';
 
 declare module '@mui/material/Button' {
   interface ButtonPropsColorOverrides {
@@ -15,6 +17,8 @@ declare module '@mui/material/Button' {
 }
 
 const TopMenu = () => {
+  const urlBlob = useSelector(selectBlobState);
+
   return (
     <Wrapper>
       <List>
@@ -39,7 +43,7 @@ const TopMenu = () => {
         </Button>
       </List>
       {footerColumnData.map((column) => {
-        //Размещаем ссылки по полонкам в футере
+        //Размещаем ссылки по колонкам в футере
         if (column.header === 'Разделы') {
           return (
             <List key={column.header}>
@@ -62,9 +66,21 @@ const TopMenu = () => {
           <List key={column.header}>
             <Title>{column.header}</Title>
             {column.items.map((item) => {
+              if (item.name === 'Репертуар') {
+                return (
+                  <StyledLink
+                    to=""
+                    as="a"
+                    href={urlBlob || '#'}
+                    download="Pokerface_Repertuar"
+                    key={item.name}
+                  >
+                    <Underline>Репертуар</Underline>
+                  </StyledLink>
+                );
+              }
               return (
-                //@ts-ignore
-                <StyledLink key={item.name} href={item.href} as="a">
+                <StyledLink key={item.name} href={item.href} as="a" to="">
                   <Underline>{item.name}</Underline>
                 </StyledLink>
               );

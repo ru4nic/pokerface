@@ -7,16 +7,18 @@ export const Heading = styled.div`
 export const Title = styled.h4`
   padding: 1rem;
   font-size: 1rem;
-  font-family: ${theme.fonts.IbmLight};
-  color: ${theme.colors.primaryText};
+  font-family: inherit;
+
   text-align: center;
-  border: 1px solid #00000030;
+  border: 1px solid ${theme.colors.secondaryText};
   border-radius: 5px 5px 0 0;
   border-bottom: none;
   display: inline-block;
+
   @media screen and (max-width: 450px) {
     font-size: 1rem;
     font-weight: normal;
+    font-family: ${theme.fonts.IbmBold};
   }
 `;
 
@@ -25,14 +27,11 @@ export const Col = styled.ul<{ $filteredSongsLength: number }>`
     props.$filteredSongsLength <= 3 ? 'min-content' : '59vmin'};
   overflow-y: ${(props) =>
     props.$filteredSongsLength <= 3 ? 'min-content' : 'auto'};
-  min-height: min-content;
   border: 1px solid #00000020;
-  /* border-right: none; */
   border-bottom: ${(props) => props.$filteredSongsLength === 0 && 'none'};
   border-left: 1px solid #00000020;
   @media (max-width: 1076px) {
     max-height: 49vmax;
-    /* border: 1px solid #00000020; */
     border-radius: 6px;
   }
 `;

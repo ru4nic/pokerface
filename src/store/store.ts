@@ -4,6 +4,7 @@ import audioReducer from '../slices/audioSlice';
 import songsReducer from '../slices/songsSlice';
 import filterReducer from '../slices/filterSlice';
 import videoReducer from '../slices/videoSlice';
+import blobReducer from '../slices/blobSlice';
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     songs: songsReducer,
     filter: filterReducer,
     video: videoReducer,
+    blob: blobReducer,
   },
 });
 

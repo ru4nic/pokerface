@@ -41,7 +41,7 @@ const CopyBlock = ({ minutes, seconds }: CopyBlockProps) => {
 
   const arraySongs = songsInCart.map((track) => {
     //Формируем список песен из корзины для копирования в буфер обмена
-    return `**${track.author}** - ${track.song} (${track.length})\n`;
+    return `${track.author} - **${track.song}** (${track.length})\n`;
   });
 
   const Copytext = `${arraySongs.join(

@@ -34,7 +34,7 @@ const footerColumnData: FooterColumnData[] = [
     items: [
       {
         name: 'Репертуар',
-        href: links.downloads.repertoire,
+        href: '',
       },
       {
         name: 'Бытовой райдер',

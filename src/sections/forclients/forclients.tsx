@@ -20,19 +20,16 @@ import {
 } from '../../layout/main';
 import { Wrapper, Heading } from './forclients.styled';
 import Downloads from './downloads';
-// import Popup from '../../components/Popup';
 
 import Player from './player/player';
 
 import links from '../../data/links';
 import Error from './error';
 import animation from '../../components/animation';
-// import Fetch from './fetch';
 const Fetch = lazy(() => import('./fetch'));
 const Cart = lazy(() => import('./cart'));
 const SongList = lazy(() => import('./songlist/songlist'));
 const FilterForm = lazy(() => import('./filters'));
-// import FilterForm from './filterform';
 
 const ForClients = () => {
   const { ref, inView } = useInView({

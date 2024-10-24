@@ -61,5 +61,6 @@ export const NavBar = styled.div<{ $inView?: boolean }>`
 export const IconWrapp = styled.div`
   background-color: ${theme.colors.background};
   border-radius: 0.25em;
-  box-shadow: 0 1px 3px #00000080;
+  /* box-shadow: 0 1px 3px #00000080; */
+  box-shadow: 0 2px 4px #00000030;
 `;

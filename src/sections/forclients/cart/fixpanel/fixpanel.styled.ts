@@ -5,9 +5,10 @@ export const Block = styled.section`
   position: fixed;
   right: 2.3%;
   top: calc(${theme.sizes.heightOfNavBarDesktop} + 1rem);
-  /* background-color: #ffffffaa; */
-  background-color: #fffce0e0;
-  backdrop-filter: blur(10px);
+  background-color: ${theme.colors.cartBackground};
+  /* background-color: #fffce0e0; */
+  /* color: #890f2a; */
+  backdrop-filter: blur(15px);
   /* -webkit-backdrop-filter: blur(10px); */
   padding: 1em;
   z-index: 1001;
@@ -26,7 +27,7 @@ export const Block = styled.section`
   }
 `;
 export const Text = styled.p`
-  color: ${theme.colors.primaryText};
+  /* color: ${theme.colors.primaryText}; */
   margin: 0;
   font-size: 0.9em;
   margin-bottom: 0.2rem;

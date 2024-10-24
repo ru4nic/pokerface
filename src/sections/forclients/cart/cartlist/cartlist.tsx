@@ -32,8 +32,8 @@ const CartList = ({ handleCloseDialog }: PopupSongListProps) => {
         const { author, song, length } = track;
         return (
           <Item key={song} className="track-item">
-            <Author>{author}&nbsp;</Author>
-            <Song>&mdash;&nbsp;{song}</Song>
+            <Author>{author}&nbsp;&mdash;&nbsp;</Author>
+            <Song>{song}</Song>
             <Tooltip title="удалить">
               <DelBtn>
                 <IconButton
